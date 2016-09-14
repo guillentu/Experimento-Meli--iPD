@@ -1,0 +1,287 @@
+File: C:\MED-PC IV\DATA\!2016-06-13_15h24m.Subject 0
+
+
+Start Date: 06/13/16
+End Date: 06/13/16
+Subject: 0
+Experiment: 0
+Group: 0
+Box: 3
+Start Time: 15:24:15
+End Time: 15:25:24
+MSN: GuilleARU_FR_Control_ITI_CastigoFijaD
+A:       1.000
+B:       0.000
+F:       6.000
+N:       3.000
+Q:   31000.000
+Y:      45.000
+D:
+     0:      -17.000       19.000
+E:
+     0:        0.000        1.000        2.000        3.000        4.000
+     5:        5.000        6.000        7.000        8.000        9.000
+R:
+     0:        0.000        1.000        0.000
+S:
+     0:        1.000        3.000       10.000
+
+
+Start Date: 06/13/16
+End Date: 06/13/16
+Subject: 0
+Experiment: 0
+Group: 0
+Box: 3
+Start Time: 15:24:15
+End Time: 15:25:55
+MSN: GuilleARU_FR_Control_ITI_CastigoFijaD
+A:       2.000
+B:       0.000
+F:       4.000
+N:       3.000
+Q:    5000.000
+Y:      45.000
+D:
+     0:       15.000       25.000
+E:
+     0:        0.000        1.000        2.000        3.000        4.000
+     5:        5.000        6.000        7.000        8.000        9.000
+R:
+     0:        1.000        1.000        0.000
+S:
+     0:        1.000        0.000        0.000
+
+
+Start Date: 06/13/16
+End Date: 06/13/16
+Subject: 0
+Experiment: 0
+Group: 0
+Box: 3
+Start Time: 15:24:15
+End Time: 15:26:44
+MSN: GuilleARU_FR_Control_ITI_CastigoFijaD
+A:       3.000
+B:       0.000
+F:       5.000
+N:       3.000
+Q:    5000.000
+Y:      45.000
+D:
+     0:       -3.000        7.000
+E:
+     0:        0.000        1.000        2.000        3.000        4.000
+     5:        5.000        6.000        7.000        8.000        9.000
+R:
+     0:        1.000        2.000        0.000
+S:
+     0:        1.000        0.000        0.000
+
+
+Start Date: 06/13/16
+End Date: 06/13/16
+Subject: 0
+Experiment: 0
+Group: 0
+Box: 3
+Start Time: 15:24:15
+End Time: 15:27:01
+MSN: GuilleARU_FR_Control_ITI_CastigoFijaD
+A:       4.000
+B:       0.000
+F:       2.000
+N:       3.000
+Q:    5000.000
+Y:      45.000
+D:
+     0:       29.000       39.000
+E:
+     0:        0.000        1.000        2.000        3.000        4.000
+     5:        5.000        6.000        7.000        8.000        9.000
+R:
+     0:        2.000        2.000        0.000
+S:
+     0:        1.000        0.000        0.000
+
+
+Start Date: 06/13/16
+End Date: 06/13/16
+Subject: 0
+Experiment: 0
+Group: 0
+Box: 3
+Start Time: 15:24:15
+End Time: 15:27:52
+MSN: GuilleARU_FR_Control_ITI_CastigoFijaD
+A:       5.000
+B:       0.000
+F:       7.000
+N:       3.000
+Q:    5000.000
+Y:      45.000
+D:
+     0:       -6.000       39.000
+E:
+     0:        0.000        1.000        2.000        3.000        4.000
+     5:        5.000        6.000        7.000        8.000        9.000
+R:
+     0:        2.000        2.000        0.000
+S:
+     0:        1.000        0.000        0.000
+
+
+Start Date: 06/13/16
+End Date: 06/13/16
+Subject: 0
+Experiment: 0
+Group: 0
+Box: 3
+Start Time: 15:24:15
+End Time: 15:28:08
+MSN: GuilleARU_FR_Control_ITI_CastigoFijaD
+A:       6.000
+B:       0.000
+F:       9.000
+N:       3.000
+Q:    5000.000
+Y:      45.000
+D:
+     0:       31.000       41.000
+E:
+     0:        0.000        1.000        2.000        3.000        4.000
+     5:        5.000        6.000        7.000        8.000        9.000
+R:
+     0:        2.000        3.000        0.000
+S:
+     0:        1.000        0.000        0.000
+
+
+Start Date: 06/13/16
+End Date: 06/13/16
+Subject: 0
+Experiment: 0
+Group: 0
+Box: 3
+Start Time: 15:24:15
+End Time: 15:28:36
+MSN: GuilleARU_FR_Control_ITI_CastigoFijaD
+A:       7.000
+B:       0.000
+F:       8.000
+N:       1.000
+Q:    5000.000
+Y:      45.000
+D:
+     0:       18.000       29.000
+E:
+     0:        0.000        1.000        2.000        3.000        4.000
+     5:        5.000        6.000        7.000        8.000        9.000
+R:
+     0:        2.000        4.000        0.000
+S:
+     0:        1.000        0.000        0.000
+
+
+Start Date: 06/13/16
+End Date: 06/13/16
+Subject: 0
+Experiment: 0
+Group: 0
+Box: 3
+Start Time: 15:24:15
+End Time: 15:28:53
+MSN: GuilleARU_FR_Control_ITI_CastigoFijaD
+A:       8.000
+B:       0.000
+F:       9.000
+N:       0.000
+Q:    5000.000
+Y:      45.000
+D:
+     0:       29.000       39.000
+E:
+     0:        0.000        1.000        2.000        3.000        4.000
+     5:        5.000        6.000        7.000        8.000        9.000
+R:
+     0:        2.000        5.000        0.000
+S:
+     0:        1.000        0.000        0.000
+
+
+Start Date: 06/13/16
+End Date: 06/13/16
+Subject: 0
+Experiment: 0
+Group: 0
+Box: 3
+Start Time: 15:24:15
+End Time: 15:29:09
+MSN: GuilleARU_FR_Control_ITI_CastigoFijaD
+A:       9.000
+B:       0.000
+F:       4.000
+N:       0.000
+Q:    5000.000
+Y:      45.000
+D:
+     0:       30.000       40.000
+E:
+     0:        0.000        1.000        2.000        3.000        4.000
+     5:        5.000        6.000        7.000        8.000        9.000
+R:
+     0:        3.000        5.000        0.000
+S:
+     0:        1.000        0.000        0.000
+
+
+Start Date: 06/13/16
+End Date: 06/13/16
+Subject: 0
+Experiment: 0
+Group: 0
+Box: 3
+Start Time: 15:24:15
+End Time: 15:30:00
+MSN: GuilleARU_FR_Control_ITI_CastigoFijaD
+A:      10.000
+B:       0.000
+F:       7.000
+N:       1.000
+Q:    5000.000
+Y:      45.000
+D:
+     0:       -6.000       40.000
+E:
+     0:        0.000        1.000        2.000        3.000        4.000
+     5:        5.000        6.000        7.000        8.000        9.000
+R:
+     0:        3.000        5.000        0.000
+S:
+     0:        1.000        0.000        0.000
+
+
+Start Date: 06/13/16
+End Date: 06/13/16
+Subject: 0
+Experiment: 0
+Group: 0
+Box: 3
+Start Time: 15:24:15
+End Time: 15:30:15
+MSN: GuilleARU_FR_Control_ITI_CastigoFijaD
+A:      11.000
+B:       0.000
+F:       4.000
+N:       1.000
+Q:    5000.000
+Y:      45.000
+D:
+     0:       31.000       40.000
+E:
+     0:        0.000        1.000        2.000        3.000        4.000
+     5:        5.000        6.000        7.000        8.000        9.000
+R:
+     0:        3.000        5.000        0.000
+S:
+     0:        0.000        0.000        0.000
