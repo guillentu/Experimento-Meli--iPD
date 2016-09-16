@@ -1,0 +1,238 @@
+#!/bin/bash
+
+SOURCEDIR=./iPD_1_4_9s_13s_y_2_3_9s_13s/exp01
+touch $SOURCEDIR
+
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-06_14h46m.Subject IPD2_MELI_1S_1B" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-06_15h02m.Subject IPD2_MELI_2S_2B" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-06_15h21m.Subject IPD2_MELI_1M_504" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-06_15h36m.Subject IPD2_MELI_2M_504" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-06_15h51m.Subject IPD2_MELI_1T_505" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-06_16h04m.Subject IPD2_MELI_2T_11A" >> $SOURCEDIR
+
+
+SOURCEDIR=./iPD_1_4_9s_13s_y_2_3_9s_13s/exp02
+touch $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-06_16h18m.Subject IPD2_MELI_1S_1B" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-06_16h31m.Subject IPD2_MELI_2S_2B" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-06_16h47m.Subject IPD2_MELI_1M_504" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-06_16h57m.Subject IPD2_MELI_2M_504" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-06_17h10m.Subject IPD2_MELI_1T_505" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-06_17h22m.Subject IPD2_MELI_2T_11A" >> $SOURCEDIR
+ 
+SOURCEDIR=./iPD_1_4_9s_13s_y_2_3_9s_13s/exp03
+touch $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-07_15h08m.Subject IPD2_MELI_1S_1B" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-07_15h22m.Subject IPD2_MELI_2S_2B" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-07_15h37m.Subject IPD2_MELI_1M_504" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-07_15h50m.Subject IPD2_MELI_2M_504" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-07_16h04m.Subject IPD2_MELI_1T_505" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-07_16h19m.Subject IPD2_MELI_2T_11A" >> $SOURCEDIR
+ 
+SOURCEDIR=./iPD_1_4_9s_13s_y_2_3_9s_13s/exp04
+touch $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-07_16h32m.Subject IPD2_MELI_1S_1B" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-07_16h48m.Subject IPD2_MELI_2S_2B" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-07_17h02m.Subject IPD2_MELI_1M_504" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-07_17h11m.Subject IPD2_MELI_2M_504" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-07_17h24m.Subject IPD2_MELI_1T_505" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-07_17h37m.Subject IPD2_MELI_2T_11A" >> $SOURCEDIR
+
+ 
+SOURCEDIR=./iPD_1_4_9s_13s_y_2_3_9s_13s/exp05
+touch $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-08_14h50m.Subject IPD2_MELI_1S_1B" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-08_15h03m.Subject IPD2_MELI_2S_2B" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-08_15h17m.Subject IPD2_MELI_1M_504" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-08_15h27m.Subject IPD2_MELI_2M_504" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-08_15h42m.Subject IPD2_MELI_1T_505" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-08_15h55m.Subject IPD2_MELI_2T_11A" >> $SOURCEDIR
+ 
+SOURCEDIR=./iPD_1_4_9s_13s_y_2_3_9s_13s/exp06
+touch $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-08_16h07m.Subject IPD2_MELI_1S_1B" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-08_16h19m.Subject IPD2_MELI_2S_2B" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-08_16h34m.Subject IPD2_MELI_1M_504" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-08_16h45m.Subject IPD2_MELI_2M_504" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-08_16h58m.Subject IPD2_MELI_1T_505" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-08_17h11m.Subject IPD2_MELI_2T_11A" >> $SOURCEDIR
+
+ 
+SOURCEDIR=./iPD_1_4_9s_13s_y_2_3_9s_13s/exp07
+touch $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-09_15h19m.Subject IPD2_MELI_1S_1B" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-09_15h31m.Subject IPD2_MELI_2S_2B" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-09_15h44m.Subject IPD2_MELI_1M_504" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-09_15h54m.Subject IPD2_MELI_2M_504" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-09_16h06m.Subject IPD2_MELI_1T_505" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-09_16h18m.Subject IPD2_MELI_2T_11A" >> $SOURCEDIR
+ 
+SOURCEDIR=./iPD_1_4_9s_13s_y_2_3_9s_13s/exp08
+touch $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-09_16h30m.Subject IPD2_MELI_1S_1B" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-09_16h41m.Subject IPD2_MELI_2S_2B" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-09_16h54m.Subject IPD2_MELI_1M_504" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-09_17h03m.Subject IPD2_MELI_2M_504" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-09_17h16m.Subject IPD2_MELI_1T_505" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-09_17h28m.Subject IPD2_MELI_2T_11A" >> $SOURCEDIR
+
+ 
+SOURCEDIR=./iPD_1_4_9s_13s_y_2_3_9s_13s/exp09
+touch $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-10_14h30m.Subject IPD2_MELI_1S_1B" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-10_14h43m.Subject IPD2_MELI_2S_2B" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-10_14h57m.Subject IPD2_MELI_1M_504" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-10_15h07m.Subject IPD2_MELI_2M_504" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-10_15h20m.Subject IPD2_MELI_1T_505" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-10_15h31m.Subject IPD2_MELI_2T_11A" >> $SOURCEDIR
+ 
+SOURCEDIR=./iPD_1_4_9s_13s_y_2_3_9s_13s/exp10
+touch $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-10_15h41m.Subject IPD2_MELI_1S_1B" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-10_15h52m.Subject IPD2_MELI_2S_2B" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-10_16h04m.Subject IPD2_MELI_1M_504" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-10_16h14m.Subject IPD2_MELI_2M_504" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-10_16h26m.Subject IPD2_MELI_1T_505" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-10_16h39m.Subject IPD2_MELI_2T_11A" >> $SOURCEDIR
+ 
+SOURCEDIR=./iPD_1_4_9s_13s_y_2_3_9s_13s/exp11
+touch $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-11_14h32m.Subject IPD2_MELI_1S_1B" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-11_14h47m.Subject IPD2_MELI_2S_2B" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-11_15h10m.Subject IPD2_MELI_1M_504" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-11_15h23m.Subject IPD2_MELI_2M_504" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-11_15h38m.Subject IPD2_MELI_1T_505" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-11_15h52m.Subject IPD2_MELI_2T_11A" >> $SOURCEDIR
+
+ 
+SOURCEDIR=./iPD_1_4_9s_13s_y_2_3_9s_13s/exp12
+touch $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-11_16h04m.Subject IPD2_MELI_1S_1B" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-11_16h18m.Subject IPD2_MELI_2S_2B" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-11_16h32m.Subject IPD2_MELI_1M_504" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-11_16h41m.Subject IPD2_MELI_2M_504" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-11_16h56m.Subject IPD2_MELI_1T_505" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-11_17h07m.Subject IPD2_MELI_2T_11A" >> $SOURCEDIR
+ 
+SOURCEDIR=./iPD_1_4_9s_13s_y_2_3_9s_13s/exp13
+touch $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-11_17h20m.Subject IPD2_MELI_1S_1B" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-12_14h58m.Subject IPD2_MELI_2S_2B" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-12_15h13m.Subject IPD2_MELI_1M_504" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-12_15h23m.Subject IPD2_MELI_2M_504" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-12_15h36m.Subject IPD2_MELI_1T_505" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-12_15h49m.Subject IPD2_MELI_2T_11A" >> $SOURCEDIR
+ 
+SOURCEDIR=./iPD_1_4_9s_13s_y_2_3_9s_13s/exp14
+touch $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-12_14h44m.Subject IPD2_MELI_1S_1B" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-12_16h15m.Subject IPD2_MELI_2S_2B" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-12_16h28m.Subject IPD2_MELI_1M_504" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-12_16h38m.Subject IPD2_MELI_2M_504" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-12_16h50m.Subject IPD2_MELI_1T_505" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-12_17h02m.Subject IPD2_MELI_2T_11A" >> $SOURCEDIR
+ 
+SOURCEDIR=./iPD_1_4_9s_13s_y_2_3_9s_13s/exp15
+touch $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-12_16h02m.Subject IPD2_MELI_1S_1B" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR 
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-13_15h01m.Subject IPD2_MELI_1M_504" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-13_15h13m.Subject IPD2_MELI_2M_504" >> $SOURCEDIR
+
+SOURCEDIR=./iPD_1_4_9s_13s_y_2_3_9s_13s/exp16
+touch $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-13_14h46m.Subject IPD2_MELI_1S_1B" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-13_15h42m.Subject IPD2_MELI_1M_504" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-13_15h52m.Subject IPD2_MELI_2M_504" >> $SOURCEDIR
+
+SOURCEDIR=./iPD_1_4_9s_13s_y_2_3_9s_13s/exp17
+touch $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-13_15h29m.Subject IPD2_MELI_1S_1B" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-14_15h04m.Subject 0IPD2_MELI_1M_504" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-14_15h14m.Subject IPD2_MELI_2M_504" >> $SOURCEDIR
+ 
+SOURCEDIR=./iPD_1_4_9s_13s_y_2_3_9s_13s/exp18
+touch $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-14_14h50m.Subject IPD2_MELI_1S_1B" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-14_15h42m.Subject IPD2_MELI_1M_504" >> $SOURCEDIR
+echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR;echo "" >> $SOURCEDIR
+cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-14_15h52m.Subject IPD2_MELI_2M_504" >> $SOURCEDIR
+
+#cat "/home/guille/Documents/experimento/Experimento-Meli--iPD/data/!2016-07-14_15h29m.Subject IPD2_MELI_1S_1B" >> $SOURCEDIR
+

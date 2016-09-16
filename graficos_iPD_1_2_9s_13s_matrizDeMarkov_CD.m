@@ -1,10 +1,11 @@
 %-------------------------------------------------------------------
 %------- IPD + TFT
 % Analisis de las ultimas 10 sesiones
-%clear all
+clear all
 close all
 
-%load "iPD_1_3_9s_13s/datosCargadosWorkspace_3_1_9_13_fecha_20160914";
+load "iPD_1_3_9s_13s/datosCargadosWorkspace_3_1_9_13_fecha_20160914";
+%load "iPD_1_4_9s_13s_y_2_3_9s_13s/datosCargadosWorkspace_1_4_9_13_y_2_3_9_13_fecha_20160915";
 
 %load "iPD_1_2_9s_13s/datos_modificados_sobre_errores";
 
@@ -22,9 +23,9 @@ indice=["exp00";"exp01";"exp02";"exp03";"exp04";"exp05";
 todo.exp01=exp01;todo.exp02=exp02;todo.exp03=exp03;todo.exp04=exp04;todo.exp05=exp05;
 todo.exp06=exp06;todo.exp07=exp07;todo.exp08=exp08;todo.exp09=exp09;todo.exp10=exp10;
 todo.exp11=exp11;todo.exp12=exp12;todo.exp13=exp13;todo.exp14=exp14;todo.exp15=exp15;
-todo.exp16=exp16;todo.exp17=exp17;todo.exp18=exp18;todo.exp19=exp19,todo.exp20=exp20;
-todo.exp21=exp21;todo.exp22=exp22;todo.exp23=exp23;todo.exp24=exp24;todo.exp25=exp25;
-todo.exp26=exp26;todo.exp27=exp27;
+todo.exp16=exp16;todo.exp17=exp17;todo.exp18=exp18;%todo.exp19=exp19,todo.exp20=exp20;
+%todo.exp21=exp21;todo.exp22=exp22;todo.exp23=exp23;todo.exp24=exp24;todo.exp25=exp25;
+%todo.exp26=exp26;todo.exp27=exp27;
 %todo.exp28=exp28;todo.exp29=exp29;
 %todo.exp30=exp30;todo.exp31=exp31;
 %todo.exp32=exp32;todo.exp33=exp33;
@@ -267,7 +268,7 @@ probD=zeros(1,_nSujetos);
 probD=1-_mediaXsujeto;
 
 N=30; % numero de trials
-_vRefuerzos=[1 2 0 0];
+_vRefuerzos=[1 3 0 0];
 _alimento=zeros(1,_nSujetos);
 for i=1:_nSujetos   % vec [a b;c d] -> [a c b d] = [cc dc cd dd]
   _alimento(i)=N*_vRefuerzos*(vec(QQTotmarkov(:,:,i)).*[probC(i);probD(i);probC(i);probD(i)]);
@@ -282,7 +283,7 @@ for i=1:_nSujetos   % vec [a b;c d] -> [a c b d] = [cc dc cd dd]
 endfor
 _effectiveness=(N*_vDelay4eat(1))./_delay4eat;
 
-mean(food(inicioAux:finAux,i))
+%mean(food(inicioAux:finAux,i))
 _estadoEstacionario=zeros(2,_nSujetos);
 
 for i=1:_nSujetos
@@ -301,7 +302,7 @@ set(hh, "fontsize", 14);
 hh=title("Food versus Cooperation"); 
 set(hh, "fontsize", 14);
 grid on;
-t=text(-0.5*[1 1 1 1 1 1 1 1 1 1 1 -1]+30*_mediaXsujeto(I), .5+_alimento(I) ,_txtSujetos(I,:));
+t=text(-0.5*[1 1 1 1 1 1]+30*_mediaXsujeto(I), .5+_alimento(I) ,_txtSujetos(I,:));
 axis([10 ,31,17.5, 31],'manual');
 hold on;
 h=plot(30*_mediaXsujeto(I(length(I))),_alimento(I(length(I))),'ko', "markersize",20,"markerfacecolor",'none', "linewidth", 2);
@@ -322,7 +323,7 @@ set(hh, "fontsize", 14);
 hh=title("Cooperation versus Delay to eat"); 
 set(hh, "fontsize", 14);
 grid on;
-t=text(-0.5*[1 1 1 1 1 1 1 1 1 1 1 -1]+30*_mediaXsujeto(I), 0.04*[1 1 1 1 1 1 1 1 1 1 1 .5]+_delay2eat(I) ,_txtSujetos(I,:));
+t=text(-0.5*[1 1 1 1 1 1]+30*_mediaXsujeto(I), 0.04*[1 1 1 1 1 1]+_delay2eat(I) ,_txtSujetos(I,:));
 axis([1 ,30, 0, 1],'auto');
 hold on;
 h=plot(30*_mediaXsujeto(I(length(I))),_delay2eat(I(length(I))),'ko', "markersize",20,"markerfacecolor",'none', "linewidth", 2);
@@ -339,7 +340,7 @@ set(hh, "fontsize", 14);
 hh=title("Effectiveness versus Cooperation"); 
 set(hh, "fontsize", 14);
 grid on;
-t=text(-0.60*[1 1 1 1 1 1 1 1 1 1 1 -1]+30*_mediaXsujeto(I), 0.02*[1 -1 1 1 1 1 1 1 1 1 1 .5]+_effectiveness(I) ,_txtSujetos(I,:));
+t=text(-0.5*[1 1 1 1 1 1 ]+30*_mediaXsujeto(I), 0.02*[1 1 1 1 1 1]+_effectiveness(I) ,_txtSujetos(I,:));
 axis([1 ,30, 0, 1],'auto');
 hold on;
 h=plot(30*_mediaXsujeto(I(length(I))),_effectiveness(I(length(I))),'ko', "markersize",20,"markerfacecolor",'none', "linewidth", 2);
@@ -357,7 +358,7 @@ set(hh, "fontsize", 14);
 hh=title("Food Rate versus Food Harvested"); 
 set(hh, "fontsize", 14);
 grid on;
-t=text(-0.60*[1 1 1 1 1 1 1 1 1 1 1 -1]+_alimento(I), 0.02*[1 -1 1 1 1 1 1 1 1 1 1 .5]+_foodRate(I) ,_txtSujetos(I,:));
+t=text(-0.50*[1 1 1 1 1 1 ]+_alimento(I), 0.02*[1 1 1 1 1 1]+_foodRate(I) ,_txtSujetos(I,:));
 axis([1 ,30, 0, 1],'auto');
 hold on;
 h=plot(_alimento(I(length(I))),_foodRate(I(length(I))),'ko', "markersize",20,"markerfacecolor",'none', "linewidth", 2);

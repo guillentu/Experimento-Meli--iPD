@@ -107,7 +107,7 @@ function x = extraerDatos_iPD_abril_corregido_meli(str)
 %  _fileStr=fgetl(_fid);         %lee lineas
 
   while (feof(_fid)==0)
-    txt=fgetl(_fid);   
+    txt=fgetl(_fid);
     pos=strchr(txt,":");
     if (strcmp("File",txt(1:pos-1))==1)
       _fileStr=txt;
@@ -191,13 +191,13 @@ function x = extraerDatos_iPD_abril_corregido_meli(str)
     elseif (strcmp("S",txt(1:pos-1))==1)
       txt=fgetl(_fid);
       pos=strchr(txt,":");
-      i=1;
-      _controlITI_0=str2num(txt((pos+(i)*13-7):((pos+(i)*13))));%str2num(txt((pos+(i+1)*8+i*5):(pos+(i+1)*8+(i+1)*5)));
-      i++;
-      _controlITI_1=str2num(txt((pos+(i)*13-7):((pos+(i)*13))));
-      i++;
-      _controlITI_2=str2num(txt((pos+(i)*13-7):((pos+(i)*13))));
-      _controlITI=[_controlITI_0; _controlITI_1; _controlITI_2];
+      #i=0;
+      #_controlITI_0=str2num(txt((pos+(i)*13-7):((pos+(i)*13))));%str2num(txt((pos+(i+1)*8+i*5):(pos+(i+1)*8+(i+1)*5)));
+      #i++;
+      #_controlITI_1=str2num(txt((pos+(i)*13-7):((pos+(i)*13))));
+      #i++;
+      #_controlITI_2=str2num(txt((pos+(i)*13-7):((pos+(i)*13))));
+      #_controlITI=[_controlITI_0; _controlITI_1; _controlITI_2];
       cargar=1;
     else
       %printf("NADA\n");
@@ -206,7 +206,7 @@ function x = extraerDatos_iPD_abril_corregido_meli(str)
     
     %---------------------------------------------------------
     %if _experiment=="17"
-    _sujeto=0; 
+    _sujeto=0;
     if cargar==1
 			if strcmp(_groupStr,"1S_1B")
 				_sujeto=1;
