@@ -5,15 +5,21 @@ clear all
 close all
 
 _experimento="";%  T=3 ; T=5;
-_experimento="T-3";
+_experimento="T=3";
 if (strcmp(_experimento,"T=3"))
   load "iPD_1_3_9s_13s/datosCargadosWorkspace_3_1_9_13_fecha_20160914";
   _vRefuerzos=[1 0 3 0];
   _vDelay4eat=[5 13 5 9];%[cc dc cd dd]
+  _foodLimit=15*_vRefuerzos(2)+15*_vRefuerzos(3);
+  _timeoutLimit=15*_vDelay4eat(2)+15*_vDelay4eat(3);
+  _timeoutITI=30*5;
 else
   load "iPD_1_5_9s_13s_y_2_3_9s_13s/datosCargadosWorkspace_1_5_9_13_y_2_3_9_13_fecha_20160915";
-  _vRefuerzos=[1 0 5 0];
+  _vRefuerzos=[1 0 4 0];
   _vDelay4eat=[5 13 5 9];
+  _foodLimit=15*_vRefuerzos(2)+15*_vRefuerzos(3); 
+  _timeoutLimit=15*_vDelay4eat(2)+15*_vDelay4eat(3);
+  _timeoutITI=30*5;
 endif  
 
 indice=["exp00";"exp01";"exp02";"exp03";"exp04";"exp05";
@@ -81,7 +87,7 @@ _trialFin=30;
 inicio=01;
 fin=50;
 datos=zeros(2,fin);
-_criterio=0.7;
+_criterio=0.67;
 
 % Testeo ------------------------------
 %for j=inicio:fin
@@ -133,7 +139,7 @@ endfor
 
 % Experimentos por sujetos
 expXsuj=zeros(1,_nSujetos);
-for j=inicio:(nfields(todo))
+for j=inicio:(numfields(todo))
   for i=1:length(todo.(indice(j+1,:)))
     if length(todo.(indice(j+1,:))(i)._groupStr)!=0
       expXsuj(i)++;
@@ -150,9 +156,10 @@ endfor
 T=zeros(_nSujetos,length(inicio:fin));C=zeros(_nSujetos,length(inicio:fin));
 P=zeros(_nSujetos,length(inicio:fin));S=zeros(_nSujetos,length(inicio:fin));
 controlFallas=zeros(1,_nSujetos);
+controlFallasXexp=zeros(_nSujetos,length(inicio:(fin)));
 auxFallas=1;
 
-_ultimosX=7;
+_ultimosX=10;
 for i=1:_nSujetos
   ultimo=expXsuj(i);
   primero=1;
@@ -161,12 +168,12 @@ for i=1:_nSujetos
       if ((todo.(indice(j+1,:))(i)._respuestasEXP(k)==0)||(todo.(indice(j+1,:))(i)._respuestasOPO(k)==0))
         if (k==1)
           ++controlFallas(i);%%%
-          ++controlFallas(i);
         elseif (k==2) 
           if (todo.(indice(j+1,:))(i)._respuestasEXP(k-1)!=0)% k=1 y K=2 son ceros no se cuenta una falla auxiluar
             auxFallas+=1;  
           endif
           ++controlFallas(i);%%%
+          ++controlFallasXexp(i,j);
         elseif (k==3)
           if (todo.(indice(j+1,:))(i)._respuestasEXP(k-2)==0)&&(todo.(indice(j+1,:))(i)._respuestasEXP(k-1)==0)
             % nada
@@ -176,9 +183,11 @@ for i=1:_nSujetos
             a="MIERDA!!!"
           endif
           ++controlFallas(i);%%%
+          ++controlFallasXexp(i,j);
         else
           auxFallas+=1;
           ++controlFallas(i);
+          ++controlFallasXexp(i,j);
         endif
       elseif (todo.(indice(j+1,:))(i)._respuestasEXP(k)==1)&&(todo.(indice(j+1,:))(i)._respuestasOPO(k)==2)
         T(i,j-inicio+1)++; %TRAICIONAR DADO :
@@ -261,13 +270,26 @@ for i=1:_nSujetos
     matricesQaux.(indiceSujeto(i,:)) = zeros(4,4);
   endfor
 endfor
-TT=T;CC=C;R=C;
-PP=P;SS=S;
 
+%T(:,:)=T(:,:)/(length(_trialIni:_trialFin));C(:,:)=C(:,:)/length(_trialIni:_trialFin);
+%P(:,:)=P(:,:)/length(_trialIni:_trialFin);S(:,:)=S(:,:)/length(_trialIni:_trialFin);
+auxOutComes=T(:,:)+C(:,:)+P(:,:)+S(:,:);
+%T=T./auxOutComes;T(isnan(T(:,:)))=0;
+%C=C./auxOutComes;C(isnan(C(:,:)))=0;
+%P=P./auxOutComes;P(isnan(P(:,:)))=0;
+%S=S./auxOutComes;S(isnan(S(:,:)))=0;
+
+T=T./(30-controlFallasXexp);
+C=C./(30-controlFallasXexp);
+P=P./(30-controlFallasXexp);
+S=S./(30-controlFallasXexp);
+TT=[];CC=[];PP=[];SS=[];
+TT=T;CC=C;PP=P;SS=S;
+T2=T;R2=C;P2=P;S2=S;
 % Analizando las ultimas X sesiones
 %_ultimosX=5;
 %   Normalizacion para todos los sujetos en todos los experimentos
-QxExp_ante=matricesQxExp
+QxExp_ante=matricesQxExp;
 Q_antes=matricesQ;
 QQ=[];
 QQTot=zeros(2,2,_nSujetos);
@@ -301,12 +323,15 @@ for i=1:_nSujetos
 endfor
 
 for i=1:_nSujetos
-  ultimo=nfields(matricesQxExp.(indiceSujeto(i,:)));
+  ultimo=numfields(matricesQxExp.(indiceSujeto(i,:)));
   primero=ultimo-_ultimosX+1;
     
-  T_mean(i)=mean(T(i,primero:ultimo));R_mean(i)=mean(R(i,primero:ultimo));P_mean(i)=mean(P(i,primero:ultimo));S_mean(i)=mean(S(i,primero:ultimo));
-  T_median(i)=median(T(i,primero:ultimo));R_median(i)=median(R(i,primero:ultimo));P_median(i)=median(P(i,primero:ultimo));S_median(i)=median(S(i,primero:ultimo));
-  T_std(i)=std(T(i,primero:ultimo));R_std(i)=std(R(i,primero:ultimo));P_std(i)=std(P(i,primero:ultimo));S_std(i)=std(S(i,primero:ultimo));
+  T_mean(i)=mean(T(i,primero:ultimo));R_mean(i)=mean(R2(i,primero:ultimo));
+  P_mean(i)=mean(P(i,primero:ultimo));S_mean(i)=mean(S(i,primero:ultimo));
+  T_median(i)=median(T(i,primero:ultimo));R_median(i)=median(R2(i,primero:ultimo));
+  P_median(i)=median(P(i,primero:ultimo));S_median(i)=median(S(i,primero:ultimo));
+  T_std(i)=std(T(i,primero:ultimo));R_std(i)=std(R2(i,primero:ultimo));
+  P_std(i)=std(P(i,primero:ultimo));S_std(i)=std(S(i,primero:ultimo));
 endfor
 auxNorma=T_mean+R_mean+P_mean+S_mean;
 T_mean=T_mean./auxNorma;
@@ -317,6 +342,8 @@ S_mean=S_mean./auxNorma;
 graficos_iPD_1_2_9s_13s_cantidadAlimentos_meli;
 
 graficos_iPD_1_2_9s_13s_Promedios_ultimosX;
+
+%probEleccionXestadoPrimeroUltimoBETAsinbasura;
 
 % Probabilidad d estar en C o en D
 
@@ -349,7 +376,7 @@ probD=1-probC;
 QQideales=[[0; 1 ;1; 0],[1; 0; 0; 0],[.5; .5; .5; .5],[14/15; 0; 1/15; 1],[2/3;1/3;1/3;2/3],[.5; 1; .5; 0],[2/3; 1; 1/3; 0]];
 _idealSujeto=zeros(2,length(probC));% row 1 alimetno - row 2 delay to eat
 for i=1:length(probC)
-  _idealSujeto(1,i)=N*_vRefuerzos*(QQideales(:,i).*[probC(i);probD(i);probC(i);probD(i)]);
+  _idealSujeto(1,i)=30*_vRefuerzos*(QQideales(:,i).*[probC(i);probD(i);probC(i);probD(i)]./_foodLimit);
 endfor
 for i=1:length(probC)
   _idealSujeto(2,i)=30*_vDelay4eat*(QQideales(:,i).*[probC(i);probD(i);probC(i);probD(i)]);
@@ -386,11 +413,11 @@ for i=1:_nSujetos
   if (strcmp(_experimento,"T=3"))
     name=strcat("figuras/prob_C_dado_X",_txtSujetos(i,:));
     name=strcat(name,".png");
-    print(hhh, name);
+    %print(hhh, name);
   elseif
     name=strcat("figuras/iPD2/prob_C_dado_X",_txtSujetos(i,:));
     name=strcat(name,".png");
-    print(hhh, name);
+    %print(hhh, name);
   endif
 endfor
 
@@ -399,9 +426,9 @@ endfor
 [S I]=sort(_mediaXsujeto);
 hhh=figure;
 %h=plot(_mediaXsujeto(I),_alimento(I),'ko', "markersize",12,"markerfacecolor",'c', "linewidth", 2);
-h=scatter(_mediaXsujeto(I(find(sort(_mediaXsujeto)>0.3))),_alimento(I(find(sort(_mediaXsujeto)>0.3))),20,_delay4eat(I(find(sort(_mediaXsujeto)>0.3))),"filled");
-ch=colormap(copper);
-colorbar('southoutside');
+h=scatter(_mediaXsujeto(I(find(sort(_mediaXsujeto)>0.3))),_alimento(I(find(sort(_mediaXsujeto)>0.3))),200,_delay4eat(I(find(sort(_mediaXsujeto)>0.3))),"filled");
+h=colormap(jet);
+h=colorbar('eastoutside');
 set(h, "linewidth", 2);
 hh=xlabel("Among of C choice ");
 set(hh, "fontsize", 14);
@@ -433,7 +460,7 @@ if (strcmp(_experimento,"T=3"))
   name=strcat(name,".png");
   print(hhh, name);
 elseif
-  name=strcat("figuras/iPD2/meanCvsReward",_txtSujetos(i,:));
+  name=strcat("figuras/iPD2/meanCvsReward",(_txtSujetos(i,:)));
   name=strcat(name,".png");
   print(hhh, name);
 endif
@@ -473,7 +500,7 @@ if (strcmp(_experimento,"T=3"))
   name=strcat(name,".png");
   print(hhh, name);
 elseif
-  name=strcat("figuras/iPD2/meanCvsRmutua",_txtSujetos(i,:));
+  name=strcat("figuras/iPD2/meanCvsRmutua",(_txtSujetos(i,:)));
   name=strcat(name,".png");
   print(hhh, name);
 endif
@@ -552,41 +579,61 @@ elseif
 endif
 
 
+%% Alimentacion Versus Delay to eat
+%_delay2eat=(_delay4eat-_timeoutITI)./(_timeoutLimit-_timeoutITI);
+%[S I]=sort(_alimento);
+%hhh=figure;
+%%h=plot(_alimento(I),_delay2eat(I),'ko', "markersize",14,"markerfacecolor",'c', "linewidth", 2);
+%h=scatter(_delay2eat(I(find(sort(_alimento)>0.8)))./120,_alimento(I(find(sort(_alimento)>0.8))),20, _mediaXsujeto(I(find(sort(_alimento)>0.8))),"filled");
+%%ch=colormap(copper);
+%h=colormap(jet);
+%h=colorbar('eastoutside');
+%hold on;
+%%h=errorbar(_delay2eat(I(find(sort(_alimento)>0.8)))./120,_alimento(I(find(sort(_alimento)>0.8))),'*k');
+%set(h, "linewidth", 2);
+%hh=ylabel("% of total Reward");
+%set(hh, "fontsize", 14);
+%hh=xlabel("% total acumulated Timeout per sessions");
+%set(hh, "fontsize", 14);
+%hh=title("Reward versus Timeout to eat (colorbar=cooperation)"); 
+%set(hh, "fontsize", 14);
+%grid on;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 % Alimentacion Versus Delay to eat
-_delay2eat=_delay4eat;
-[S I]=sort(_alimento);
+_delay2eat=_timeOutMedia;%-_timeoutITI)./(_timeoutLimit-_timeoutITI);
+[Ss I]=sort(foodMedia);
 hhh=figure;
-%h=plot(_alimento(I),_delay2eat(I),'ko', "markersize",14,"markerfacecolor",'c', "linewidth", 2);
-h=scatter(_delay2eat(I(find(sort(_alimento)>0.8)))./120,_alimento(I(find(sort(_alimento)>0.8))),20, _mediaXsujeto(I(find(sort(_alimento)>0.8))),"filled");
-%ch=colormap(copper);
-ch=colormap(copper);
-h=colorbar('southoutside');
+aux=I(find(sort(foodMedia)));
+h=scatter(_delay2eat(aux),foodMedia(aux),180, _mediaXsujeto(aux),"filled");
+ch=colormap(jet);
+h=colorbar('eastoutside');
+aux=I(find(sort(foodMedia)));
 hold on;
-%h=errorbar(_delay2eat(I(find(sort(_alimento)>0.8)))./120,_alimento(I(find(sort(_alimento)>0.8))),'*k');
-set(h, "linewidth", 2);
+%h=errorbar(_delay2eat(I(find(sort(foodMedia)>0.8)))./_timeOutMedia,foodMedia(I(find(sort(foodMedia)>0.8))),,'*k');
+%set(hhh, "linewidth", 2);
 hh=ylabel("% of total Reward");
-set(hh, "fontsize", 14);
+set(hh, "fontsize", 16);
 hh=xlabel("% total acumulated Timeout per sessions");
-set(hh, "fontsize", 14);
+set(hh, "fontsize", 16);
 hh=title("Reward versus Timeout to eat (colorbar=cooperation)"); 
-set(hh, "fontsize", 14);
-grid on;
-t=text(0.02*[1 1 1 1 1 1]+_delay2eat(I(find(sort(_alimento)>0.7)))./120,
-      -0.04*[1 1 1 1 1 1]+_alimento(I(find(sort(_alimento)>0.7))),
-       _txtSujetos(I(find(sort(_alimento)>0.7)),:));
-axis('auto');
+set(hh, "fontsize", 16);
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+t=text(-0.02*[1 1 1 1 1 1]+_delay2eat(I(find(sort(foodMedia)))),
+      0.05*[1 1 1 1 1 1]+foodMedia(I(find(sort(foodMedia)))),
+       _txtSujetos(I(find(sort(foodMedia))),:));
+axis([0,1,0.1,1]);
 hold on;
-h=scatter(_idealSujeto(2,[1 3 4 5 6 7])./120,_idealSujeto(1,[1 3 4 5 6 7]),15,probC([1 3 4 5 6 7])','s',"filled");
-h=scatter(_idealSujeto(2,[1 3 4 5 6 7])./120,_idealSujeto(1,[1 3 4 5 6 7]),15,'k','s',"linewidth",2);
+h=scatter((_idealSujeto(2,[1 3 4 5 6 7])-_timeoutITI)./(_timeoutLimit-_timeoutITI),_idealSujeto(1,[1 3 4 5 6 7]),15,probC([1 3 4 5 6 7])','s',"filled");
+h=scatter((_idealSujeto(2,[1 3 4 5 6 7])-_timeoutITI)./(_timeoutLimit-_timeoutITI),_idealSujeto(1,[1 3 4 5 6 7]),15,'k','s',"linewidth",2);
 %h=plot(_idealSujeto(1,[1 3 4 5 6 7]),_idealSujeto(2,[1 3 4 5 6 7]),'ko', "markersize",15,"markerfacecolor",'r', "linewidth", 2);
-t=text(-0.10*[1 1 1 1 1 1]+_idealSujeto(2,[1 3 4 5 6 7])./120,
-       0.05*ones(1,length(probC([1 3 4 5 6 7])))+ _idealSujeto(1,[1 3 4 5 6 7]), 
+t=text(-0.10*[1 -.5 1 -.5 1 1]+(_idealSujeto(2,[1 3 4 5 6 7])-_timeoutITI)./(_timeoutLimit-_timeoutITI),
+       -0.05*[1 1 1 1 -1 -1]+ _idealSujeto(1,[1 3 4 5 6 7]), 
        {"switch CD";"switch CCDD";"half C";"switch 3Cx3D";"switch CCD";"switch CCCD"});
 
-t=text(-0.10*[1 1 1 1 1 1]+ _idealSujeto(2,[1 3 4 5 6 7])./120,
-       0.03*[1 1 1 1 1 1]+ _idealSujeto(1,[1 3 4 5 6 7]),
-       {"coop 0.5";"coop 0.5";"coop 0.5";"coop 0.5";"coop 0.66%";"coop 0.75%"}); 
-t=text(0.2,0.22,{"Normalized amoung of C choice"},"fontsize",14);       
+%t=text(-0.10*[1 1 1 1 1 1]+ (_idealSujeto(2,[1 3 4 5 6 7])-_timeoutITI)./(_timeoutLimit-_timeoutITI),
+%       0.03*[1 1 1 1 1 1]+ _idealSujeto(1,[1 3 4 5 6 7]),
+%       {"coop 0.5";"coop 0.5";"coop 0.5";"coop 0.5";"coop 0.66%";"coop 0.75%"}); 
+t=text(0.2,0.1,{"Normalized amoung of C choice"},"fontsize",14);       
 hold off;
 if (strcmp(_experimento,"T=3"))
   name=strcat("figuras/TimeoutvsReward",_txtSujetos(i,:));
@@ -598,6 +645,30 @@ elseif
   print(hhh, name);
 endif
 
+if _experimento==""
+  _delay2eat=_timeOutMedia;%-_timeoutITI)./(_timeoutLimit-_timeoutITI);
+  [Ss I]=sort(foodMedia);
+  hhh=figure;
+  aux=[1 3 4];
+  h=scatter(_delay2eat(aux),foodMedia(aux),180, _mediaXsujeto(aux),"filled");
+  ch=colormap(jet);
+  h=colorbar('eastoutside');
+  aux=I(find(sort(foodMedia)));
+  hold on;
+  %h=errorbar(_delay2eat(I(find(sort(foodMedia)>0.8)))./_timeOutMedia,foodMedia(I(find(sort(foodMedia)>0.8))),,'*k');
+  %set(hhh, "linewidth", 2);
+  hh=ylabel("% of total Reward");
+  set(hh, "fontsize", 16);
+  hh=xlabel("% total acumulated Timeout per sessions");
+  set(hh, "fontsize", 16);
+  hh=title("Reward versus Timeout to eat (colorbar=cooperation)"); 
+  set(hh, "fontsize", 16);
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  t=text(-0.02*[1 1 1 1 1 1]+_delay2eat(I(find(sort(foodMedia)))),
+        0.05*[1 1 1 1 1 1]+foodMedia(I(find(sort(foodMedia)))),
+         _txtSujetos(I(find(sort(foodMedia))),:));
+  axis([0,1,0.1,1]);
+endif
 
 
 %% tiempos promedio por ensayor

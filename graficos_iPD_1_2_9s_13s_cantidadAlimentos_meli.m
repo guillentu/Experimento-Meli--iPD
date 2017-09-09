@@ -21,9 +21,9 @@ endfor
 food=[];
 for i=1:_nSujetos
   if (strcmp(_experimento,"T=3"))
-    food(:,i)=[TT(i,:).*3 + CC(i,:).*1 + PP(i,:).*0 + SS(i,:).*0];
+    food(:,i)=30*[TT(i,:).*3 + CC(i,:).*1 + PP(i,:).*0 + SS(i,:).*0]./_foodLimit;
   else
-    food(:,i)=[TT(i,:).*5 + CC(i,:).*1 + PP(i,:).*0 + SS(i,:).*0];
+    food(:,i)=30*[TT(i,:).*4 + CC(i,:).*1 + PP(i,:).*0 + SS(i,:).*0]./_foodLimit;
   endif
 endfor
 foodMedia=zeros(1,_nSujetos);
@@ -38,9 +38,11 @@ endfor
 _timeOut=[];
 for i=1:_nSujetos
   if (strcmp(_experimento,"T=3"))
-    _timeOut(:,i)=[TT(i,:).*_vDelay4eat(3) + CC(i,:).*_vDelay4eat(1)+ PP(i,:).*_vDelay4eat(4)+ SS(i,:).*_vDelay4eat(2)];
+    _timeOut(:,i)=(30.*[TT(i,:).*_vDelay4eat(3) + CC(i,:).*_vDelay4eat(1)+ ...
+                        PP(i,:).*_vDelay4eat(4)+ SS(i,:).*_vDelay4eat(2)]-_timeoutITI)./(_timeoutLimit-_timeoutITI);
   else
-    _timeOut(:,i)=[TT(i,:).*_vDelay4eat(3)+ CC(i,:).*_vDelay4eat(1)+ PP(i,:).*_vDelay4eat(4)+ SS(i,:).*_vDelay4eat(2)];
+    _timeOut(:,i)=(30.*[TT(i,:).*_vDelay4eat(3) + CC(i,:).*_vDelay4eat(1)+ ...
+                        PP(i,:).*_vDelay4eat(4)+ SS(i,:).*_vDelay4eat(2)]-_timeoutITI)./(_timeoutLimit-_timeoutITI);
   endif
 endfor
 
@@ -56,17 +58,20 @@ endfor
 
 
 hhh=figure;
-h=errorbar([1:_nSujetos],foodMedia/30,foodSem/30,'*b');set (h, "linewidth", 2);
+h=errorbar([1:_nSujetos],foodMedia,foodSem,'*b');set (h, "linewidth", 2);
 hold on;
 axis("tic[yz]", "labely[xyz]");
-h=bar(foodMedia/30,"facecolor", "g","edgecolor","k");set (h, "linewidth", 2);
+h=bar(foodMedia,"facecolor", "g","edgecolor","k");set (h, "linewidth", 2);
 
 hh=xlabel("Sujets - Last 10 sesions");set(hh, "fontsize", 14);
 hh=ylabel("% total reward");set(hh, "fontsize", 14);
 hh=title(" Mean of reward");set(hh, "fontsize", 14);
 t=text(-.25+[1:_nSujetos], 0.55*ones(1,_nSujetos) , ptrn);set(hh, "fontsize", 14);
-%axis([0,13,0.5,1],"square");
+axis([0,7,0,1],"square");
 legend("SEM","MEAN");
+ht=plot([0.5:0.01:_nSujetos+0.5],30./_foodLimit*ones(1,length([0.5:0.01:_nSujetos+0.5])),'--r');
+set(ht, "linewidth", 2);
+t=text(5,30/_foodLimit+0.02, "All C");set(hh, "fontsize", 14);
 hold off;
 if (strcmp(_experimento,"T=3"))
   name=strcat("figuras/mean_reward",".png");
@@ -74,6 +79,31 @@ if (strcmp(_experimento,"T=3"))
 else
   name=strcat("figuras/iPD2/mean_reward",".png");
   print(hhh, name);
+endif
+
+if strcmp( _experimento,"")
+  hhh=figure;
+  h=errorbar([1 3 4],foodMedia([1 3 4]),foodSem([1 3 4]),'*b');set (h, "linewidth", 2);
+  hold on;
+  axis("tic[yz]", "labely[xyz]");
+  h=bar([1 3 4],foodMedia([1 3 4]),"facecolor", "g","edgecolor","k");set (h, "linewidth", 2);
+  hh=xlabel("Sujets - Last 10 sesions");set(hh, "fontsize", 14);
+  hh=ylabel("% total reward");set(hh, "fontsize", 14);
+  hh=title(" Mean of reward");set(hh, "fontsize", 14);
+  t=text(-.25+[1 3 4], 0.55*ones(1,3) , ptrn([1 3 4],:)); set(hh, "fontsize", 14);
+  axis([0,7,0,1],"square");
+  legend("SEM","MEAN");
+  ht=plot([0.5:0.01:_nSujetos+0.5],30./_foodLimit*ones(1,length([0.5:0.01:_nSujetos+0.5])),'--r');
+  set(ht, "linewidth", 2);
+  t=text(5,30/_foodLimit+0.02, "All C");set(hh, "fontsize", 14);
+  hold off;
+  if (strcmp(_experimento,"T=3"))
+    name=strcat("figuras/mean_reward",".png");
+    %print(hhh, name);
+  else
+    name=strcat("figuras/iPD2/mean_reward",".png");
+    %print(hhh, name);
+  endif
 endif
 %%%%%%%%%%%%%%%%  GRAPH OF TIMTEOUT   %%%%%%%%%%%%%%%%55
 hhh=figure;
@@ -96,6 +126,22 @@ else
   name=strcat("figuras/iPD2/mean_timeout",".png");
   print(hhh, name);
 endif
+
+if _experimento=""
+  hhh=figure;
+  h=errorbar([1 3 4],_timeOutMedia([1 3 4]),_timeOutSem([1 3 4]),'*b'); set (h, "linewidth", 2);
+  hold on;
+  axis("tic[yz]", "labely[xyz]");
+  h=bar([1 3 4],_timeOutMedia([1 3 4]),"facecolor", "g","edgecolor","k"); set (h, "linewidth", 2);
+
+  hh=xlabel("Sujets - Last 10 sesions");set(hh, "fontsize", 14);
+  hh=ylabel("Timeout per session");set(hh, "fontsize", 14);
+  hh=title(" Mean of timeout");set(hh, "fontsize", 14);
+  t=text(-.25+[1:_nSujetos], 0.55*ones(1,_nSujetos) , ptrn([1 3 4]));set(hh, "fontsize", 14);
+  %axis([0,13,0.5,1],"square");
+  legend("SEM","MEAN");
+  hold off;
+endif
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % TODOS JUNTOS
 figure();hold on;
@@ -112,26 +158,60 @@ endfor
 legend(_txtSujetos(_vSujetos,:),4);
 hold off;
 
+if strcmp(_experimento,"")
+  figure();hold on;
+  for i=[1 3 4]
+    inicioAux=expXsuj(i)-_ultimosX+1;
+    finAux=expXsuj(i);
+    h=plot(1:_ultimosX,food(inicioAux:finAux,i),_colores(i,:));
+    set(h, "linewidth", 2);
+    xlabel("n de sesiones");
+    ylabel("Cantidad de Alimento");
+    title("Cantidad de alimento obtenido"); 
+    grid on;
+  endfor
+  legend(_txtSujetos([1 3 4],:),4);
+  hold off;
+  axis([1,_ultimosX,0,1]);
+  %%%%% TIME OUT %%%%
+  figure();hold on;
+  for i=[1 3 4]
+    inicioAux=expXsuj(i)-_ultimosX+1;
+    finAux=expXsuj(i);
+    h=plot(1:_ultimosX,_timeOut(inicioAux:finAux,i),_colores(i,:));
+    set(h, "linewidth", 2);
+    xlabel("n de sesiones");
+    ylabel("% Timeout");
+    %title("Cantidad de alimento obtenido"); 
+    grid on;
+  endfor
+  legend(_txtSujetos([1 3 4],:),4);
+  hold off;
+  axis([1,_ultimosX,0,1]);
+endif
+
 %_criterio=.7;
 
 graficos_iPD_1_2_9s_13s_12Ratas_medias_y_medianas % se obtienen los sujetos que superan el .75 porciento de cooperación
 
 %%%%%%%CRITERIO %%%% COOPERADORES Y NO COOPERADORES %%%%%%%%%%%%%%%%%%%%
 %_sujetosCooperadores=find(_mediaXsujeto>_criterio); % indice de sujetos que pasaron el criterios 
-aux1=find(QQTotmarkov(1,1,:)(:)>_criterio);%   P(c|c) 
-aux2=find(QQTotmarkov(2,1,:)(:)>_criterio);%   P(c|d)
+aux1=find(_mediaXsujeto>_criterio);%  
+aux2=find(_mediaXsujeto>_criterio);%  
+%aux1=find(QQTotmarkov(1,1,:)(:)>_criterio);%   P(c|c) 
+%aux2=find(QQTotmarkov(2,1,:)(:)>_criterio);%   P(c|d)
 if length(aux1)>length(aux2)
-  aux3=ismember(aux1,aux2)
-  aux1=aux1(aux3)
+  aux3=ismember(aux1,aux2);
+  aux1=aux1(aux3);
 else
-  aux3=ismember(aux2,aux1)
-  aux1=aux2(aux3)  
+  aux3=ismember(aux2,aux1);
+  aux1=aux2(aux3);
 endif
 % chi_2 a sujetos que pasaron el criterio general (prob de c dado c o d mayor a la azar 0.5)
 frec_teo=100*[.5];
 for i=aux1
   chi_2_xSujetos(i)=sum((100*QQTotmarkov(:,1,i)-frec_teo).^2./frec_teo); % dos
-  sum((100*QQTotmarkov(:,1,i)-frec_teo).^2./frec_teo)
+  sum((100*QQTotmarkov(:,1,i)-frec_teo).^2./frec_teo);
 endfor
 pasan=zeros(1,_nSujetos);
 freedom=1;
@@ -141,15 +221,15 @@ for i=aux1
     pasan(i)=1;% Se rechaza la HIP NULA
   endif
 endfor
-%_sujetosCooperadores=_vSujetos1(logical(pasan));
-_sujetosCooperadores=find(aux1>_criterio); % indice de sujetos que pasaron el criterios 
-_sujetosNocooperadores=complemento(_sujetosCooperadores,_vSujetos); % Obtiene los indices de los no coop
+_sujetosCooperadores=_vSujetos1(logical(pasan));
+%_sujetosCooperadores=find(aux1>_criterio); % indice de sujetos que pasaron el criterios 
+_sujetosNocooperadores=complemento(_sujetosCooperadores,[1:_nSujetos]); % Obtiene los indices de los no coop
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %_sujetosCooperadores=find(_mediaXsujeto>_criterio); % indice de sujetos que pasaron el criterios 
 %_sujetosNocooperadores=complemento(_sujetosCooperadores,_nSujetos); % Obtiene los indices de los no coop
 
 % SOLO LOS COOPERADORES SUPERARON EL CRITERIO
-if (_sujetosCooperadores>1)
+if (length(_sujetosCooperadores)>1)
   figure();hold on;
   for i=_sujetosCooperadores%1:_nSujetos
     inicioAux=expXsuj(i)-_ultimosX+1;
@@ -162,9 +242,10 @@ if (_sujetosCooperadores>1)
     grid on;
   endfor
   legend(_txtSujetos(_sujetosCooperadores,:),4);
-  axis ([1, 10, 1, 33], "square");
-  hold off;
+  axis ([1, 10, 0, 1], "square");
+  %hold off;
 endif
+hold off;
   %SOLO LOS NO COOPERADORES NO SUPERARON EL CRITERIO
 if (_sujetosNocooperadores>1)
   if (length(_sujetosNocooperadores)>1)
@@ -180,7 +261,7 @@ if (_sujetosNocooperadores>1)
       grid on;
     endfor
     legend(_txtSujetos(_sujetosNocooperadores,:),4);
-    axis ([1, 10, 1, 33], "square");
+    axis ([1, 10, 0, 1], "square");
     hold off;
   endif
 endif

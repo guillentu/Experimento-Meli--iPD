@@ -116,7 +116,7 @@ endfor
 %_criterio=.70;
 graficos_iPD_1_2_9s_13s_12Ratas_medias_y_medianas % se obtienen los sujetos que superan el .75 porciento de cooperación
 _sujetosCooperadores=find(_mediaXsujeto>_criterio); % indice de sujetos que pasaron el criterios 
-_sujetosNocooperadores=complemento(_sujetosCooperadores,_nSujetos); % Obtiene los indices de los no coop
+_sujetosNocooperadores=complemento(_sujetosCooperadores,[1:_nSujetos]); % Obtiene los indices de los no coop
 
 
 
@@ -137,8 +137,8 @@ endfor
 inicioAux=inicio;
 finAux=fin;
 % PLOT sujeto uno x uno
-_sujetosCooperadores=[1 3 4];
-_sujetosNocooperadores=[2 5 6];
+%_sujetosCooperadores=[1 3 4];
+%_sujetosNocooperadores=[2 5 6];
 figure();hold on;
 for i=_sujetosCooperadores%1:_nSujetos   SUJETOS CON MATRIZ 1 4 9 13
   inicioAux=1;%expXsuj(i)-_ultimosX+1;
@@ -147,7 +147,7 @@ for i=_sujetosCooperadores%1:_nSujetos   SUJETOS CON MATRIZ 1 4 9 13
   set(h, "linewidth", 2);
   hh=xlabel("n de sesiones");set(hh, "fontsize", 14);
   hh=ylabel("% de cooperacion");set(hh, "fontsize", 14);
-  hh=title(strcat("Cooperacion en iPD en sujetos con matriz 1 4 9s 13s: ",num2str(_criterio,2)));
+  hh=title(strcat("Cooperacion en iPD en sujetos con Cooperadores: ",num2str(_criterio,2)));
   set(hh, "fontsize", 14);
   grid on;
 endfor
@@ -161,13 +161,29 @@ for i=_sujetosNocooperadores%1:_nSujetos
   set(h, "linewidth", 2);
   hh=xlabel("n de sesiones");set(hh, "fontsize", 14);
   hh=ylabel("% de cooperacion");set(hh, "fontsize", 14);
-  hh=title(strcat("Cooperacion en iPD en sujetos con matriz 2 3 9s 13s: ",num2str(_criterio,2)));
+  hh=title(strcat("Cooperacion en iPD en sujetos No Coop: ",num2str(_criterio,2)));
   %axis([1 10 0 1]);
   set(hh, "fontsize", 14);
   grid on;
 endfor
 legend(_txtSujetos(_sujetosNocooperadores,:),4);
 
+if strcmp(_experimento,"")
+  figure();hold on;
+for i=[1 3 4]%1:_nSujetos
+  inicioAux=1;%expXsuj(i)-_ultimosX+1;
+  finAux=expXsuj(i);
+  h=plot([inicioAux:finAux],_promediosC(inicioAux:finAux,i),_colores(i,:));
+  set(h, "linewidth", 2);
+  hh=xlabel("n de sesiones");set(hh, "fontsize", 14);
+  hh=ylabel("% de cooperacion");set(hh, "fontsize", 14);
+  hh=title(strcat("Cooperacion en iPD en sujetos No Coop: ",num2str(_criterio,2)));
+  %axis([1 10 0 1]);
+  set(hh, "fontsize", 14);
+  grid on;
+endfor
+legend(_txtSujetos([1 3 4],:),4);
+endif
 % Kluskal-Wallis ANOVA one-way a lo largo de un juego (ultimas 10sesiones) entre los promedios de cooperacion 
 
 _proporcionC=30*_cooperacion./(_trialsOK-_nada);

@@ -18,7 +18,7 @@ fin=0;
 datos=zeros(2,fin);
 
 expXsuj=zeros(1,_nSujetos);
-for j=inicio:(nfields(todo))
+for j=inicio:(numfields(todo))
   for i=1:length(todo.(indice(j+1,:)))
     if length(todo.(indice(j+1,:))(i)._groupStr)!=0
       expXsuj(i)++;
@@ -65,7 +65,7 @@ _mediaXsujeto=zeros(1,_nSujetos);
 _medianaXsujeto=zeros(1,_nSujetos);
 _stdXsujeto=zeros(1,_nSujetos);
 for i=1:_nSujetos
-  ultimo=nfields(matricesQxExp.(indiceSujeto(i,:)));
+  ultimo=numfields(matricesQxExp.(indiceSujeto(i,:)));
   primero=ultimo-_ultimosX+1;
   _mediaXsujeto(i)=mean(_promediosC(primero:ultimo,i));
   _mediaFallasXsujeto(i)=mean(_nada(primero:ultimo,i));
@@ -85,6 +85,20 @@ h2=plot([1:_nSujetos],_criterio*ones(1,_nSujetos),'--r');
 set (h2, "linewidth", 3);
 plot([1:_nSujetos],.5*ones(1,_nSujetos),'--k');
 hold off
+
+%figure; 
+%txt_1="Sujetos 1S-1M-2M";
+%h=errorbar([1 4],_mediaXsujeto([1 3 4]), _stdXsujeto([1 3 4]),'*c');
+%set (h, "linewidth", 3);
+%hh=xlabel(txt_1);set(hh, "fontsize", 14);
+%hh=ylabel("% de palanca C");set(hh, "fontsize", 14);
+%hh=title( strcat("Media - Porcentaje de eleccion de palanca Cooperar",num2str(_criterio)));set(hh, "fontsize", 14);
+%hold on
+%bar([1 3 4],_mediaXsujeto([1 3 4]));
+%h2=plot([1 3 4],_criterio*ones(1,3),'--r');
+%set (h2, "linewidth", 3);
+%plot([1 3 4],.5*ones(1,3),'--k');
+%hold off
 
 figure; 
 h=errorbar([1:_nSujetos],_medianaXsujeto, _stdXsujeto,'*c');
