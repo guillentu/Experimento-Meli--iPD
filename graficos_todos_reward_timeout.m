@@ -13,20 +13,20 @@ ini=[];
 fin=[21 33 23 23 23 31 23 50 31 29 33 23];
 figure();
 hold on;
-i=1;scatter(timeOut_T2(fin(i)-9:fin(i),i),30*food_T2(fin(i)-9:fin(i),i),200,'r','linewidth',3)
-i=2;scatter(timeOut_T2(fin(i)-9:fin(i),i),30*food_T2(fin(i)-9:fin(i),i),200,'b','fill','linewidth',3)
-i=3;scatter(timeOut_T2(fin(i)-9:fin(i),i),30*food_T2(fin(i)-9:fin(i),i),200,'r','linewidth',3)
-i=4;scatter(timeOut_T2(fin(i)-9:fin(i),i),30*food_T2(fin(i)-9:fin(i),i),200,'b','fill','linewidth',3)
-i=5;scatter(timeOut_T2(fin(i)-9:fin(i),i),30*food_T2(fin(i)-9:fin(i),i),200,'b','fill','linewidth',3)
-i=6;scatter(timeOut_T2(fin(i)-9:fin(i),i),30*food_T2(fin(i)-9:fin(i),i),200,'b','fill','linewidth',3)
-i=7;scatter(timeOut_T2(fin(i)-9:fin(i),i),30*food_T2(fin(i)-9:fin(i),i),200,'r','linewidth',3)
-i=8;scatter(timeOut_T2(fin(i)-9:fin(i),i),30*food_T2(fin(i)-9:fin(i),i),200,'r','linewidth',3)
-i=9;scatter(timeOut_T2(fin(i)-9:fin(i),i),30*food_T2(fin(i)-9:fin(i),i),200,'r','linewidth',3)
-i=10;scatter(timeOut_T2(fin(i)-9:fin(i),i),30*food_T2(fin(i)-9:fin(i),i),200,'r','linewidth',3)
-i=11;scatter(timeOut_T2(fin(i)-9:fin(i),i),30*food_T2(fin(i)-9:fin(i),i),200,'r','linewidth',3)
-i=12;scatter(timeOut_T2(fin(i)-9:fin(i),i),30*food_T2(fin(i)-9:fin(i),i),200,'r','linewidth',3)
-title('Solo experimento R1 T2 P4 S8');
-xlabel('Rojo=COOP Azul=NOCOOP');
+% i=1;scatter(timeOut_T2(fin(i)-9:fin(i),i),30*food_T2(fin(i)-9:fin(i),i),200,'r','linewidth',3)
+% i=2;scatter(timeOut_T2(fin(i)-9:fin(i),i),30*food_T2(fin(i)-9:fin(i),i),200,'b','fill','linewidth',3)
+% i=3;scatter(timeOut_T2(fin(i)-9:fin(i),i),30*food_T2(fin(i)-9:fin(i),i),200,'r','linewidth',3)
+% i=4;scatter(timeOut_T2(fin(i)-9:fin(i),i),30*food_T2(fin(i)-9:fin(i),i),200,'b','fill','linewidth',3)
+% i=5;scatter(timeOut_T2(fin(i)-9:fin(i),i),30*food_T2(fin(i)-9:fin(i),i),200,'b','fill','linewidth',3)
+% i=6;scatter(timeOut_T2(fin(i)-9:fin(i),i),30*food_T2(fin(i)-9:fin(i),i),200,'b','fill','linewidth',3)
+% i=7;scatter(timeOut_T2(fin(i)-9:fin(i),i),30*food_T2(fin(i)-9:fin(i),i),200,'r','linewidth',3)
+% i=8;scatter(timeOut_T2(fin(i)-9:fin(i),i),30*food_T2(fin(i)-9:fin(i),i),200,'r','linewidth',3)
+% i=9;scatter(timeOut_T2(fin(i)-9:fin(i),i),30*food_T2(fin(i)-9:fin(i),i),200,'r','linewidth',3)
+% i=10;scatter(timeOut_T2(fin(i)-9:fin(i),i),30*food_T2(fin(i)-9:fin(i),i),200,'r','linewidth',3)
+% i=11;scatter(timeOut_T2(fin(i)-9:fin(i),i),30*food_T2(fin(i)-9:fin(i),i),200,'r','linewidth',3)
+% i=12;scatter(timeOut_T2(fin(i)-9:fin(i),i),30*food_T2(fin(i)-9:fin(i),i),200,'r','linewidth',3)
+% title('Solo experimento R1 T2 P4 S8');
+% xlabel('Rojo=COOP Azul=NOCOOP');
 % T=3
 fin=[18 27 18 18 27 27];
 i=1;scatter(270*timeOut_T3(fin(i)-9:fin(i),i),45*food_T3(fin(i)-9:fin(i),i),200,'m','linewidth',3)
@@ -37,9 +37,9 @@ i=4;scatter(270*timeOut_T3(fin(i)-9:fin(i),i),45*food_T3(fin(i)-9:fin(i),i),200,
 %i=6;scatter(270*timeOut_T3(fin(i)-9:fin(i),i),45*food_T3(fin(i)-9:fin(i),i),200,'m','linewidth',3)
 % T=4
 fin=[17 27 17 17 27 27];
-i=1;scatter(270*timeOut_T4(fin(i)-9:fin(i),i),45*food_T4(fin(i)-9:fin(i),i),200,'m','fill','linewidth',3)
-i=3;scatter(270*timeOut_T4(fin(i)-9:fin(i),i),45*food_T4(fin(i)-9:fin(i),i),200,'m','fill','linewidth',3)
-i=4;scatter(270*timeOut_T4(fin(i)-9:fin(i),i),45*food_T4(fin(i)-9:fin(i),i),200,'m','fill','linewidth',3)
+i=1;scatter(270*timeOut_T4(fin(i)-9:fin(i),i),60*food_T4(fin(i)-9:fin(i),i),200,'m','fill','linewidth',3)
+i=3;scatter(270*timeOut_T4(fin(i)-9:fin(i),i),60*food_T4(fin(i)-9:fin(i),i),200,'m','fill','linewidth',3)
+i=4;scatter(270*timeOut_T4(fin(i)-9:fin(i),i),60*food_T4(fin(i)-9:fin(i),i),200,'m','fill','linewidth',3)
 title('Experimento T aumentado T=3 -> T=4');
 xlabel('vacio = T=3 llenos= T=4');
 %plot([0 165],[25 35],'--k','linewidth',3)
