@@ -379,7 +379,7 @@ P=P./(30-controlFallasXexp);
 S=S./(30-controlFallasXexp);
 %
 % Analizando las ultimas X sesiones
-_ultimosX=7;
+_ultimosX=5;
 %   Normalizacion para todos los sujetos en todos los experimentos
 Q_antes=matricesQ;
 for i=1:_nSujetos % Ceros para todos
