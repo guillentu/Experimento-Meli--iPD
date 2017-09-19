@@ -385,29 +385,135 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-_timeOut=[];
-for i=1:_nSujetos
-  if (strcmp(_experimento,"T=3"))
-    _timeOut(:,i)=[TT(i,:).*_vDelay4eat(1) + CC(i,:).*_vDelay4eat(2)+ PP(i,:).*_vDelay4eat(3)+ SS(i,:).*_vDelay4eat(4)];
-  else
-    _timeOut(:,i)=[TT(i,:).*_vDelay4eat(1)+ CC(i,:).*_vDelay4eat(2)+ PP(i,:).*_vDelay4eat(3)+ SS(i,:).*_vDelay4eat(4)];
-  endif
+%_timeOut=[];
+%for i=1:_nSujetos
+%  if (strcmp(_experimento,"T=3"))
+%    _timeOut(:,i)=[TT(i,:).*_vDelay4eat(1) + CC(i,:).*_vDelay4eat(2)+ PP(i,:).*_vDelay4eat(3)+ SS(i,:).*_vDelay4eat(4)];
+%  else
+%    _timeOut(:,i)=[TT(i,:).*_vDelay4eat(1)+ CC(i,:).*_vDelay4eat(2)+ PP(i,:).*_vDelay4eat(3)+ SS(i,:).*_vDelay4eat(4)];
+%  endif
+%endfor
+%
+%_timeOutMedia=zeros(1,_nSujetos);
+%_timeOutSem=zeros(1,_nSujetos);
+%for i=1:_nSujetos
+%  inicioAux=expXsuj(i)-_ultimosX+1;
+%  finAux=expXsuj(i);
+%  _timeOutMedia(i) = mean(_timeOut(inicioAux:finAux,i));
+%  _timeOutSem(i) = sem(_timeOut(inicioAux:finAux,i));
+%endfor
+%
+%_timeOutMedia
+%
+%_idealSujeto=zeros(2,length(probC));
+%for i=1:length(probC)
+%  _idealSujeto(1,i)=N*_vRefuerzos*(QQideales(:,i).*[probC(i);probC(i);probD(i);probD(i)]);
+%endfor
+
+%
+%Q22=zeros(4,4,_nSujetos);
+%for i=1:_nSujetos
+%  ultimo=numfields(matricesQxExp.(indiceSujeto(i,:)));
+%  primero=ultimo-_ultimosX+1;
+%  for v=primero:ultimo % matricesQ borrada arriba
+%        %Q2(:,:,i)=Q2(:,:,i)+(matricesQxExp.(indiceSujeto(i,:)).(indice(v+1,:))/length(primero:ultimo));
+%        Q2(:,:,i)=Q2(:,:,i)+(matricesQxExp.(indiceSujeto(i,:)).(indice(v+1,:)));
+%        %Q2(:,:,i)=Q2(:,:,i)+(matricesQxExp.(indiceSujeto(i,:)).(indice(v+1,:)));%/length(primero:ultimo));
+%  endfor
+%  for jj=1:4 
+%    if sum(isnan(Q2(jj,:,i)))!=0
+%      Q2(jj,:,i)=[0 0 0 0];
+%    endif
+%    if sum(Q2(jj,:,i))!=0
+%      Q2(jj,:,i)=Q2(jj,:,i)./ sum(Q2(jj,:,i),2);
+%    endif
+%  endfor
+%endfor
+
+
+%expXsuj=zeros(1,_nSujetos);
+%for j=inicio:(nfields(todo)-8)
+%  for i=1:length(todo.(indice(j+1,:)))
+%    if length(todo.(indice(j+1,:))(i)._groupStr)!=0
+%      expXsuj(i)++;
+%    endif
+%  endfor
+%endfor
+
+
+%%% Experimento T=2
+%expXsuj(1)--;
+%expXsuj(1)--;
+%_tracking=[];
+%for i=[1 3 4]%1:_nSujetos
+%  todo.(indice(2,:))(i)._groupStr
+%  for j=expXsuj(i)-4:expXsuj(i)
+%    num2str(todo.(indice(j+1,:))(i)._respuestasEXP(:)')
+%  endfor
+%endfor
+
+%%%% Experimento T=3
+_tracking_T3=zeros(4,5,3);
+for i=[1 3 4]%1:_nSujetos
+  todo.(indice(2,:))(i)._groupStr
+  for j=expXsuj(i)-4:expXsuj(i)  %cd - dc - cc - dd
+    %num2str(todo.(indice(j+1,:))(i)._respuestasEXP(:)')
+    _tracking_T3(1,j+5-expXsuj(i),i)=length(find(diff(todo.(indice(j+1,:))(i)._respuestasEXP(1:30))==-1));
+    _tracking_T3(2,j+5-expXsuj(i),i)=length(find(diff(todo.(indice(j+1,:))(i)._respuestasEXP(1:30))==1));
+    _tracking_T3(3,j+5-expXsuj(i),i)=length(find(todo.(indice(j+1,:))(i)._respuestasEXP(1:29)+todo.(indice(j+1,:))(i)._respuestasEXP(2:30)==4));
+    _tracking_T3(4,j+5-expXsuj(i),i)=length(find(todo.(indice(j+1,:))(i)._respuestasEXP(1:29)+todo.(indice(j+1,:))(i)._respuestasEXP(2:30)==2));
+  endfor
 endfor
 
-_timeOutMedia=zeros(1,_nSujetos);
-_timeOutSem=zeros(1,_nSujetos);
-for i=1:_nSujetos
-  inicioAux=expXsuj(i)-_ultimosX+1;
-  finAux=expXsuj(i);
-  _timeOutMedia(i) = mean(_timeOut(inicioAux:finAux,i));
-  _timeOutSem(i) = sem(_timeOut(inicioAux:finAux,i));
+%%% Experimento T=4
+%_tracking=[];
+%for i=[1 3 4]%1:_nSujetos
+%  todo.(indice(2,:))(i)._groupStr
+%  for j=expXsuj(i)-4-9:expXsuj(i)-9
+%    num2str(todo.(indice(j+1,:))(i)._respuestasEXP(:)')
+%  endfor
+%endfor
+_tracking_T4=zeros(4,5,3);
+for i=[1 3 4]%1:_nSujetos
+  todo.(indice(2,:))(i)._groupStr
+  k=1;
+  for j=expXsuj(i)-4-9:expXsuj(i)-9  %cd - dc - cc - dd
+    %num2str(todo.(indice(j+1,:))(i)._respuestasEXP(:)')
+    _tracking_T4(1,k,i)=length(find(diff(todo.(indice(j+1,:))(i)._respuestasEXP(1:30))==-1));
+    _tracking_T4(2,k,i)=length(find(diff(todo.(indice(j+1,:))(i)._respuestasEXP(1:30))==1));
+    _tracking_T4(3,k,i)=length(find(todo.(indice(j+1,:))(i)._respuestasEXP(1:29)+todo.(indice(j+1,:))(i)._respuestasEXP(2:30)==4));
+    _tracking_T4(4,k,i)=length(find(todo.(indice(j+1,:))(i)._respuestasEXP(1:29)+todo.(indice(j+1,:))(i)._respuestasEXP(2:30)==2));
+    k++;
+  endfor
 endfor
-
-_timeOutMedia
-
-_idealSujeto=zeros(2,length(probC));
-for i=1:length(probC)
-  _idealSujeto(1,i)=N*_vRefuerzos*(QQideales(:,i).*[probC(i);probC(i);probD(i);probD(i)]);
+%%%% Experimento T=5
+_tracking_T5=zeros(4,5,3);
+for i=[1 3 4]%1:_nSujetos
+  todo.(indice(2,:))(i)._groupStr
+  for j=expXsuj(i)-4:expXsuj(i)  %cd - dc - cc - dd
+    %num2str(todo.(indice(j+1,:))(i)._respuestasEXP(:)')
+    _tracking_T5(1,j+5-expXsuj(i),i)=length(find(diff(todo.(indice(j+1,:))(i)._respuestasEXP(1:30))==-1));
+    _tracking_T5(2,j+5-expXsuj(i),i)=length(find(diff(todo.(indice(j+1,:))(i)._respuestasEXP(1:30))==1));
+    _tracking_T5(3,j+5-expXsuj(i),i)=length(find(todo.(indice(j+1,:))(i)._respuestasEXP(1:29)+todo.(indice(j+1,:))(i)._respuestasEXP(2:30)==4));
+    _tracking_T5(4,j+5-expXsuj(i),i)=length(find(todo.(indice(j+1,:))(i)._respuestasEXP(1:29)+todo.(indice(j+1,:))(i)._respuestasEXP(2:30)==2));
+  endfor
 endfor
+%_tracking=[];
+%for i=[1 3 4]%1:_nSujetos
+%  todo.(indice(2,:))(i)._groupStr
+%  for j=expXsuj(i)-4:expXsuj(i)
+%    num2str(todo.(indice(j+1,:))(i)._respuestasEXP(:)')
+%  endfor
+%endfor
+
+%%todo.exp17(1)._respuestasEXP(1:29)'+todo.exp17(1)._respuestasEXP(2:30)'
+%%diff(todo.exp17(1)._respuestasEXP(1:30))
 
 
+sum(squeeze(sum(_tracking_T3(:,:,[1 3 4]),2)),2)
+sum(squeeze(sum(_tracking_T4(:,:,[1 3 4]),2)),2)
+sum(squeeze(sum(_tracking_T5(:,:,[1 3 4]),2)),2)
+
+sum(squeeze(sum(_tracking_T3(:,:,[1 3 4]),2)),2)
+sum(squeeze(sum(_tracking_T4(:,:,[1 3 4]),2)),2)
+sum(squeeze(sum(_tracking_T5(:,:,[1 3 4]),2)),2)
