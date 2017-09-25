@@ -127,7 +127,7 @@ else
   print(hhh, name);
 endif
 
-if _experimento=""
+if (strcmp(_experimento,""))
   hhh=figure;
   h=errorbar([1 3 4],_timeOutMedia([1 3 4]),_timeOutSem([1 3 4]),'*b'); set (h, "linewidth", 2);
   hold on;

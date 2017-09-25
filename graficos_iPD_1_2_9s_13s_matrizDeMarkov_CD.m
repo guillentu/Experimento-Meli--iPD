@@ -160,7 +160,7 @@ controlFallas=zeros(1,_nSujetos);
 controlFallasXexp=zeros(_nSujetos,length(inicio:(fin)));
 auxFallas=1;
 
-_ultimosX=10;
+_ultimosX=5;
 for i=1:_nSujetos
   ultimo=expXsuj(i);
   primero=1;
@@ -382,6 +382,22 @@ endfor
 for i=1:length(probC)
   _idealSujeto(2,i)=30*_vDelay4eat*(QQideales(:,i).*[probC(i);probD(i);probC(i);probD(i)]);
 endfor
+
+% _idealSujeto_Tx food , timeout , R ,T, P , S
+_idealSujeto_T=zeros(6,length(probC));
+_idealSujeto_T(1:2,:)= [_idealSujeto(1,:); (_idealSujeto(2,:)-_timeoutITI)./(_timeoutLimit-_timeoutITI)]
+
+for i=1:length(probC)
+  _idealSujeto_T(3:6,i)=(QQideales(:,i).*[probC(i);probD(i);probC(i);probD(i)]);
+endfor
+
+if (strcmp(_experimento,"T=3"))
+  _idealSujeto_T3=_idealSujeto_T;
+  save('secuencias_T3_ideales','_idealSujeto_T3');
+else
+  _idealSujeto_T5=_idealSujeto_T;
+  save('secuencias_T5_ideales','_idealSujeto_T5');
+endif
 
 
 _effectiveness=(N*_vDelay4eat(1))./_delay4eat;
@@ -771,11 +787,11 @@ xlabel("Coefficient of preference");
 if (strcmp(_experimento,"T=3"))
   name=strcat("figuras/coefficientOfPreference",_txtSujetos(i,:));
   name=strcat(name,".png");
-  print(hhh, name);
+  %print(hhh, name);
 elseif
   name=strcat("figuras/iPD2/coefficientOfPreference",_txtSujetos(i,:));
   name=strcat(name,".png");
-  print(hhh, name);
+  %print(hhh, name);
 endif
 
 

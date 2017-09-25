@@ -452,68 +452,130 @@
 %  endfor
 %endfor
 
-%%%% Experimento T=3
-_tracking_T3=zeros(4,5,3);
-for i=[1 3 4]%1:_nSujetos
-  todo.(indice(2,:))(i)._groupStr
-  for j=expXsuj(i)-4:expXsuj(i)  %cd - dc - cc - dd
-    %num2str(todo.(indice(j+1,:))(i)._respuestasEXP(:)')
-    _tracking_T3(1,j+5-expXsuj(i),i)=length(find(diff(todo.(indice(j+1,:))(i)._respuestasEXP(1:30))==-1));
-    _tracking_T3(2,j+5-expXsuj(i),i)=length(find(diff(todo.(indice(j+1,:))(i)._respuestasEXP(1:30))==1));
-    _tracking_T3(3,j+5-expXsuj(i),i)=length(find(todo.(indice(j+1,:))(i)._respuestasEXP(1:29)+todo.(indice(j+1,:))(i)._respuestasEXP(2:30)==4));
-    _tracking_T3(4,j+5-expXsuj(i),i)=length(find(todo.(indice(j+1,:))(i)._respuestasEXP(1:29)+todo.(indice(j+1,:))(i)._respuestasEXP(2:30)==2));
-  endfor
-endfor
-
-%%% Experimento T=4
-%_tracking=[];
+%%%%%%%%%%% PARA OBTENER LAS SECUENCIAS DE CD DC CC DD  %%%%%%%%SAVE en secuencias_T3 y T4_5 %%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Experimento T=3
+%_tracking_T3=zeros(4,5,3);
 %for i=[1 3 4]%1:_nSujetos
 %  todo.(indice(2,:))(i)._groupStr
-%  for j=expXsuj(i)-4-9:expXsuj(i)-9
-%    num2str(todo.(indice(j+1,:))(i)._respuestasEXP(:)')
+%  for j=expXsuj(i)-4:expXsuj(i)  %cd - dc - cc - dd
+%    %num2str(todo.(indice(j+1,:))(i)._respuestasEXP(:)')
+%    _tracking_T3(1,j+5-expXsuj(i),i)=length(find(diff(todo.(indice(j+1,:))(i)._respuestasEXP(1:30))==-1));
+%    _tracking_T3(2,j+5-expXsuj(i),i)=length(find(diff(todo.(indice(j+1,:))(i)._respuestasEXP(1:30))==1));
+%    _tracking_T3(3,j+5-expXsuj(i),i)=length(find(todo.(indice(j+1,:))(i)._respuestasEXP(1:29)+todo.(indice(j+1,:))(i)._respuestasEXP(2:30)==4));
+%    _tracking_T3(4,j+5-expXsuj(i),i)=length(find(todo.(indice(j+1,:))(i)._respuestasEXP(1:29)+todo.(indice(j+1,:))(i)._respuestasEXP(2:30)==2));
 %  endfor
 %endfor
-_tracking_T4=zeros(4,5,3);
-for i=[1 3 4]%1:_nSujetos
-  todo.(indice(2,:))(i)._groupStr
-  k=1;
-  for j=expXsuj(i)-4-9:expXsuj(i)-9  %cd - dc - cc - dd
-    %num2str(todo.(indice(j+1,:))(i)._respuestasEXP(:)')
-    _tracking_T4(1,k,i)=length(find(diff(todo.(indice(j+1,:))(i)._respuestasEXP(1:30))==-1));
-    _tracking_T4(2,k,i)=length(find(diff(todo.(indice(j+1,:))(i)._respuestasEXP(1:30))==1));
-    _tracking_T4(3,k,i)=length(find(todo.(indice(j+1,:))(i)._respuestasEXP(1:29)+todo.(indice(j+1,:))(i)._respuestasEXP(2:30)==4));
-    _tracking_T4(4,k,i)=length(find(todo.(indice(j+1,:))(i)._respuestasEXP(1:29)+todo.(indice(j+1,:))(i)._respuestasEXP(2:30)==2));
-    k++;
-  endfor
-endfor
-%%%% Experimento T=5
-_tracking_T5=zeros(4,5,3);
-for i=[1 3 4]%1:_nSujetos
-  todo.(indice(2,:))(i)._groupStr
-  for j=expXsuj(i)-4:expXsuj(i)  %cd - dc - cc - dd
-    %num2str(todo.(indice(j+1,:))(i)._respuestasEXP(:)')
-    _tracking_T5(1,j+5-expXsuj(i),i)=length(find(diff(todo.(indice(j+1,:))(i)._respuestasEXP(1:30))==-1));
-    _tracking_T5(2,j+5-expXsuj(i),i)=length(find(diff(todo.(indice(j+1,:))(i)._respuestasEXP(1:30))==1));
-    _tracking_T5(3,j+5-expXsuj(i),i)=length(find(todo.(indice(j+1,:))(i)._respuestasEXP(1:29)+todo.(indice(j+1,:))(i)._respuestasEXP(2:30)==4));
-    _tracking_T5(4,j+5-expXsuj(i),i)=length(find(todo.(indice(j+1,:))(i)._respuestasEXP(1:29)+todo.(indice(j+1,:))(i)._respuestasEXP(2:30)==2));
-  endfor
-endfor
-%_tracking=[];
+%
+%%%% Experimento T=4
+%%_tracking=[];
+%%for i=[1 3 4]%1:_nSujetos
+%%  todo.(indice(2,:))(i)._groupStr
+%%  for j=expXsuj(i)-4-9:expXsuj(i)-9
+%%    num2str(todo.(indice(j+1,:))(i)._respuestasEXP(:)')
+%%  endfor
+%%endfor
+%_tracking_T4=zeros(4,5,3);
 %for i=[1 3 4]%1:_nSujetos
 %  todo.(indice(2,:))(i)._groupStr
-%  for j=expXsuj(i)-4:expXsuj(i)
-%    num2str(todo.(indice(j+1,:))(i)._respuestasEXP(:)')
+%  k=1;
+%  for j=expXsuj(i)-4-9:expXsuj(i)-9  %cd - dc - cc - dd
+%    %num2str(todo.(indice(j+1,:))(i)._respuestasEXP(:)')
+%    _tracking_T4(1,k,i)=length(find(diff(todo.(indice(j+1,:))(i)._respuestasEXP(1:30))==-1));
+%    _tracking_T4(2,k,i)=length(find(diff(todo.(indice(j+1,:))(i)._respuestasEXP(1:30))==1));
+%    _tracking_T4(3,k,i)=length(find(todo.(indice(j+1,:))(i)._respuestasEXP(1:29)+todo.(indice(j+1,:))(i)._respuestasEXP(2:30)==4));
+%    _tracking_T4(4,k,i)=length(find(todo.(indice(j+1,:))(i)._respuestasEXP(1:29)+todo.(indice(j+1,:))(i)._respuestasEXP(2:30)==2));
+%    k++;
 %  endfor
 %endfor
-
+%%%%% Experimento T=5
+%_tracking_T5=zeros(4,5,3);
+%for i=[1 3 4]%1:_nSujetos
+%  todo.(indice(2,:))(i)._groupStr
+%  for j=expXsuj(i)-4:expXsuj(i)  %cd - dc - cc - dd
+%    %num2str(todo.(indice(j+1,:))(i)._respuestasEXP(:)')
+%    _tracking_T5(1,j+5-expXsuj(i),i)=length(find(diff(todo.(indice(j+1,:))(i)._respuestasEXP(1:30))==-1));
+%    _tracking_T5(2,j+5-expXsuj(i),i)=length(find(diff(todo.(indice(j+1,:))(i)._respuestasEXP(1:30))==1));
+%    _tracking_T5(3,j+5-expXsuj(i),i)=length(find(todo.(indice(j+1,:))(i)._respuestasEXP(1:29)+todo.(indice(j+1,:))(i)._respuestasEXP(2:30)==4));
+%    _tracking_T5(4,j+5-expXsuj(i),i)=length(find(todo.(indice(j+1,:))(i)._respuestasEXP(1:29)+todo.(indice(j+1,:))(i)._respuestasEXP(2:30)==2));
+%  endfor
+%endfor
+%%_tracking=[];
+%%for i=[1 3 4]%1:_nSujetos
+%%  todo.(indice(2,:))(i)._groupStr
+%%  for j=expXsuj(i)-4:expXsuj(i)
+%%    num2str(todo.(indice(j+1,:))(i)._respuestasEXP(:)')
+%%  endfor
+%%endfor
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%todo.exp17(1)._respuestasEXP(1:29)'+todo.exp17(1)._respuestasEXP(2:30)'
 %%diff(todo.exp17(1)._respuestasEXP(1:30))
 
+%%%%%%%%%%%%5  PARA graficar las frecuencias de las secuencias  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%sum(squeeze(sum(_tracking_T3(:,:,[1 3 4]),2)),2)
+%sum(squeeze(sum(_tracking_T4(:,:,[1 3 4]),2)),2)
+%sum(squeeze(sum(_tracking_T5(:,:,[1 3 4]),2)),2)
+clear all;close all;
+load('secuencias_T3');
+load('secuencias_T4_5');
+load('secuencias_T3_ideales');
+load('secuencias_T3');
+load('secuencias_T5_ideales');
+load('secuencias_T4_5');
+exp_T3=squeeze(sum(_tracking_T3(:,:,[1 3 4]),2));
+exp_T4=squeeze(sum(_tracking_T4(:,:,[1 3 4]),2));
+exp_T5=squeeze(sum(_tracking_T5(:,:,[1 3 4]),2));
 
-sum(squeeze(sum(_tracking_T3(:,:,[1 3 4]),2)),2)
-sum(squeeze(sum(_tracking_T4(:,:,[1 3 4]),2)),2)
-sum(squeeze(sum(_tracking_T5(:,:,[1 3 4]),2)),2)
+figure;hold on;
+n=sum(exp_T3,1);
+bar([mean(exp_T3./n,2), mean(exp_T5./n,2)])
+legend("T3","T5")
 
-sum(squeeze(sum(_tracking_T3(:,:,[1 3 4]),2)),2)
-sum(squeeze(sum(_tracking_T4(:,:,[1 3 4]),2)),2)
-sum(squeeze(sum(_tracking_T5(:,:,[1 3 4]),2)),2)
+figure;hold on;
+plot(exp_T3(3,:),exp_T3(1,:),'*ob','linewidth',3,'MarkerSize',15)
+plot(exp_T5(3,:),exp_T5(1,:),'*or','linewidth',3,'MarkerSize',15)
+
+h=plot(mean(exp_T3(3,:)),mean(exp_T3(1,:)),'*ok','linewidth',3,'MarkerSize',15,'MarkerEdgeColor','k','MarkerFaceColor','k')
+h=plot(mean(exp_T5(3,:)),mean(exp_T5(1,:)),'*ok','linewidth',3,'MarkerSize',15,'MarkerEdgeColor','k','MarkerFaceColor','k')
+h=errorbar(mean(exp_T3(3,:)),mean(exp_T3(1,:)),sem(exp_T3(3,:)),sem(exp_T3(1,:)),'~>k')
+set(h,'linewidth',3);
+h=errorbar(mean(exp_T5(3,:)),mean(exp_T5(1,:)),sem(exp_T5(3,:)),sem(exp_T5(1,:)),'~>k')
+set(h,'linewidth',3);
+h=plot(_idealSujeto_T3(3,1),_idealSujeto_T3(2,1),'*om','linewidth',3,'MarkerSize',15,'MarkerEdgeColor','k','MarkerFaceColor','k')
+h=plot(mean(exp_T5(3,:)),mean(exp_T5(1,:)),'*ok','linewidth',3,'MarkerSize',15,'MarkerEdgeColor','k','MarkerFaceColor','k')
+
+
+
+aux_T3=[_tracking_T3(:,:,[1]) _tracking_T3(:,:,[3]) _tracking_T3(:,:,[4])];
+aux_T5=[_tracking_T5(:,:,[1]) _tracking_T5(:,:,[3]) _tracking_T5(:,:,[4])];
+figure;hold on;
+scatter(mean(aux_T3(3,:)),mean(aux_T3(1,:)),200,'*ob','filled','linewidth',3)
+scatter(mean(aux_T5(3,:)),mean(aux_T5(1,:)),200,'*or','filled','linewidth',3)
+scatter(aux_T3(3,:),aux_T3(1,:),200,'*ob','linewidth',2)
+scatter(aux_T5(3,:),aux_T5(1,:),200,'*or','linewidth',2)
+
+h=errorbar(mean(aux_T3(3,:)),mean(aux_T3(1,:)),sem(aux_T3(3,:)),sem(aux_T3(1,:)),'~>b')
+set(h,'linewidth',3);
+h=errorbar(mean(aux_T5(3,:)),mean(aux_T5(1,:)),sem(aux_T5(3,:)),sem(aux_T5(1,:)),'~>r')
+set(h,'linewidth',3);
+
+% T=3 
+load('datos_indice_T3');
+rw_T3=food; 
+to_T3=_timeOut;
+fin_T3=[18 27 18 18 27 27];foodMax_T3=45;
+
+% T=4
+load('datos_indice_T5');
+rw_T5=food; 
+to_T5=_timeOut;
+fin_T5=[17 27 17 17 27 27];foodMax_T5=60;
+
+I_T3= (rw_T3(fin_T3-4:fin_T3)-to_T3(fin_T3-4:fin_T3))/(rw_T3(fin_T3-4:fin_T3)+to_T3(fin_T3-4:fin_T3));
+I_T5= (rw_T5(fin_T5-4:fin_T5)-to_T5(fin_T5-4:fin_T5))/(rw_T5(fin_T5-4:fin_T5)+to_T5(fin_T5-4:fin_T5));
+
+
+
+aux_T3=reshape(_tracking_T3(4,:,[1 3 4]),1,15)
+aux_T5=reshape(_tracking_T5(4,:,[1 3 4]),1,15)
+t_test_2(aux_T3,aux_T5);
+ranksum
