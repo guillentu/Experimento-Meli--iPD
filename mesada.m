@@ -525,10 +525,6 @@ exp_T3=squeeze(sum(_tracking_T3(:,:,[1 3 4]),2));
 exp_T4=squeeze(sum(_tracking_T4(:,:,[1 3 4]),2));
 exp_T5=squeeze(sum(_tracking_T5(:,:,[1 3 4]),2));
 
-figure;hold on;
-n=sum(exp_T3,1);
-bar([mean(exp_T3./n,2), mean(exp_T5./n,2)])
-legend("T3","T5")
 %squeeze(_tracking_T3(:,:,[1 3 4])(1,:))
 
 cd_T3=jackknife(@sem_dep,squeeze((_tracking_T3(:,:,[1 3 4])/n(1))(1,:)));
@@ -540,14 +536,30 @@ dc_T5=jackknife(@sem_dep,squeeze((_tracking_T5(:,:,[1 3 4])/n(1))(2,:)));
 cc_T5=jackknife(@sem_dep,squeeze((_tracking_T5(:,:,[1 3 4])/n(1))(3,:)));
 dd_T5=jackknife(@sem_dep,squeeze((_tracking_T5(:,:,[1 3 4])/n(1))(4,:)));
 figure;hold on;
-plot(mean(exp_T3./n,2)','*k');
-plot(mean(exp_T5./n,2),'+b'));
-errorbar(mean(exp_T3./n,2)',[mean(cd_T3) mean(dc_T3) mean(cc_T3) mean(dd_T3)],'linewidth',3)
-errorbar(mean(exp_T5./n,2)',[mean(cd_T5) mean(dc_T5) mean(cc_T5) mean(dd_T5)])
+plot(mean(exp_T3./n,2)','ok','linewidth',3,'MarkerSize',14,'MarkerFaceColor','k');
+plot(mean(exp_T5./n,2),'ob','linewidth',3,'MarkerSize',14,'MarkerFaceColor','b');
+H=errorbar(mean(exp_T3./n,2)',[mean(cd_T3) mean(dc_T3) mean(cc_T3) mean(dd_T3)],'.k')
+set(H,'linewidth',3);
+H=errorbar(mean(exp_T5./n,2)',[mean(cd_T5) mean(dc_T5) mean(cc_T5) mean(dd_T5)],'.b')
+set(H,'linewidth',3);
 %wilcoxon_test
-(_tracking_T3(:,:,[1 3 4])/n(1))(1,:)
-(_tracking_T5(:,:,[1 3 4])/n(1))(1,:)))
+%(_tracking_T3(:,:,[1 3 4])/n(1))(1,:)
+%(_tracking_T5(:,:,[1 3 4])/n(1))(1,:)))
+figure;hold on;
+n=sum(exp_T3,1);
+h=bar([mean(exp_T3./n,2), mean(exp_T5./n,2)])
+legend("T3","T5")
+H=errorbar([1:4]-0.18,mean(exp_T3./n,2)',[mean(cd_T3) mean(dc_T3) mean(cc_T3) mean(dd_T3)],'.k')
+set(H,'linewidth',3);
+H=errorbar([1:4]+0.18,mean(exp_T5./n,2)',[mean(cd_T5) mean(dc_T5) mean(cc_T5) mean(dd_T5)],'.b')
+set(H,'linewidth',3);
 
+% Plot CC vs DD
+figure;hold on;
+plot((exp_T3./n)(4,:)',(exp_T3./n)(3,:)','ok','MarkerFaceColor','k','MarkerSize',15)
+plot((exp_T5./n)(4,:)',(exp_T5./n)(3,:)','ob','MarkerFaceColor','b','MarkerSize',15)
+xlabel("DD");
+ylabel("CC")
 
 figure;hold on;
 plot(exp_T3(3,:),exp_T3(1,:),'*ob','linewidth',3,'MarkerSize',15)
