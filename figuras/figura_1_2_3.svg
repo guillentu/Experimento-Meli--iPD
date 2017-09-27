@@ -2448,22 +2448,6 @@
        orient="auto"
        refY="0"
        refX="0"
-       id="marker7252-4"
-       style="overflow:visible"
-       inkscape:isstock="true"
-       inkscape:collect="always">
-      <path
-         inkscape:connector-curvature="0"
-         id="path7113-8"
-         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
-         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
-         transform="scale(0.4,0.4)" />
-    </marker>
-    <marker
-       inkscape:stockid="TriangleOutM"
-       orient="auto"
-       refY="0"
-       refX="0"
        id="marker9127"
        style="overflow:visible">
       <path
@@ -2515,134 +2499,6 @@
          style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
          d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
          id="path7261-8" />
-    </marker>
-    <marker
-       inkscape:isstock="true"
-       style="overflow:visible"
-       id="marker17025-9"
-       refX="0"
-       refY="0"
-       orient="auto"
-       inkscape:stockid="TriangleOutM"
-       inkscape:collect="always">
-      <path
-         transform="scale(0.4,0.4)"
-         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
-         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
-         id="path17027-7"
-         inkscape:connector-curvature="0" />
-    </marker>
-    <marker
-       inkscape:isstock="true"
-       style="overflow:visible"
-       id="marker146359-7"
-       refX="0"
-       refY="0"
-       orient="auto"
-       inkscape:stockid="TriangleOutM"
-       inkscape:collect="always">
-      <path
-         transform="scale(0.4,0.4)"
-         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1pt;stroke-opacity:1"
-         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
-         id="path146361-6"
-         inkscape:connector-curvature="0" />
-    </marker>
-    <marker
-       inkscape:stockid="TriangleOutM"
-       orient="auto"
-       refY="0"
-       refX="0"
-       id="marker144661-4"
-       style="overflow:visible"
-       inkscape:isstock="true"
-       inkscape:collect="always">
-      <path
-         inkscape:connector-curvature="0"
-         id="path144663-3"
-         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
-         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1pt;stroke-opacity:1"
-         transform="scale(0.4,0.4)" />
-    </marker>
-    <marker
-       inkscape:stockid="TriangleOutM"
-       orient="auto"
-       refY="0"
-       refX="0"
-       id="marker143567-0"
-       style="overflow:visible"
-       inkscape:isstock="true"
-       inkscape:collect="always">
-      <path
-         inkscape:connector-curvature="0"
-         id="path143569-3"
-         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
-         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1pt;stroke-opacity:1"
-         transform="scale(0.4,0.4)" />
-    </marker>
-    <marker
-       inkscape:stockid="TriangleOutM"
-       orient="auto"
-       refY="0"
-       refX="0"
-       id="marker146939-0"
-       style="overflow:visible"
-       inkscape:isstock="true"
-       inkscape:collect="always">
-      <path
-         inkscape:connector-curvature="0"
-         id="path146941-9"
-         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
-         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
-         transform="scale(0.4,0.4)" />
-    </marker>
-    <marker
-       inkscape:stockid="TriangleOutM"
-       orient="auto"
-       refY="0"
-       refX="0"
-       id="marker145229-2"
-       style="overflow:visible"
-       inkscape:isstock="true"
-       inkscape:collect="always">
-      <path
-         inkscape:connector-curvature="0"
-         id="path145231-5"
-         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
-         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
-         transform="scale(0.4,0.4)" />
-    </marker>
-    <marker
-       inkscape:isstock="true"
-       style="overflow:visible"
-       id="marker144111-4"
-       refX="0"
-       refY="0"
-       orient="auto"
-       inkscape:stockid="TriangleOutM"
-       inkscape:collect="always">
-      <path
-         transform="scale(0.4,0.4)"
-         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1pt;stroke-opacity:1"
-         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
-         id="path144113-0"
-         inkscape:connector-curvature="0" />
-    </marker>
-    <marker
-       inkscape:isstock="true"
-       style="overflow:visible"
-       id="marker145791-5"
-       refX="0"
-       refY="0"
-       orient="auto"
-       inkscape:stockid="TriangleOutM"
-       inkscape:collect="always">
-      <path
-         transform="scale(0.4,0.4)"
-         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
-         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
-         id="path145793-9"
-         inkscape:connector-curvature="0" />
     </marker>
     <clipPath
        id="clipPath7158"
@@ -2963,6 +2819,107 @@
          id="path15980"
          d="m 180,1800 5760,0 0,4320 -5760,0 0,-4320 z" />
     </clipPath>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker7259-6"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutM">
+      <path
+         inkscape:connector-curvature="0"
+         transform="scale(0.4,0.4)"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         id="path7261-2" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutM-3-6"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path12950-0-1-1"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="scale(0.4,0.4)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker6603"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6605"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="scale(0.4,0.4)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker6607"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6609"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="scale(0.4,0.4)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker7255-9"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutM">
+      <path
+         inkscape:connector-curvature="0"
+         transform="scale(0.4,0.4)"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         id="path7257-2" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker6615"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6617"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="scale(0.4,0.4)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker7263-0"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutM">
+      <path
+         inkscape:connector-curvature="0"
+         transform="scale(0.4,0.4)"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         id="path7265-2" />
+    </marker>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -2971,9 +2928,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.70710681"
-     inkscape:cx="51.644311"
-     inkscape:cy="224.21526"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="-396.96354"
+     inkscape:cy="101.75075"
      inkscape:document-units="px"
      inkscape:current-layer="g17522"
      showgrid="false"
@@ -14609,7 +14566,7 @@
        d="M 611.65539,1732.8389 928.85968,1627.1041" />
     <g
        id="g6803"
-       transform="matrix(0.45175558,0,0,0.45175558,945.01142,-557.19166)"
+       transform="matrix(0.45175558,0,0,0.46906644,945.01142,-594.76545)"
        inkscape:export-filename="/home/guille/Documents/github_Repository/experimento/Experimento-Meli--iPD/figuras/figuras para Segio/graf_CD_CC.pdf"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
@@ -17257,584 +17214,6 @@
            x="1336.4318"
            y="990.13678">CC</tspan></text>
     </g>
-    <g
-       id="g15066"
-       transform="translate(-838.62863,-49.497474)">
-      <g
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/guille/Documents/github_Repository/experimento/Experimento-Meli--iPD/figuras/figuras para Segio/graf_CD_CC.pdf"
-         transform="matrix(0.43131058,0,0,0.43131058,744.01396,-572.47355)"
-         id="g40599-4">
-        <path
-           sodipodi:type="arc"
-           style="fill:#ffffff;fill-opacity:0.54545456;stroke:#000000;stroke-width:4.2705245;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-           id="path12773-59-0-1-22-7-7-6-6"
-           sodipodi:cx="1249.632"
-           sodipodi:cy="-2691.0974"
-           sodipodi:rx="30.708702"
-           sodipodi:ry="30.708702"
-           d="m 1280.3407,-2691.0974 c 0,16.9599 -13.7488,30.7087 -30.7087,30.7087 -16.96,0 -30.7087,-13.7488 -30.7087,-30.7087 0,-16.96 13.7487,-30.7087 30.7087,-30.7087 16.5865,0 30.1756,13.1711 30.6937,29.7495"
-           sodipodi:start="0"
-           sodipodi:end="6.2519454"
-           sodipodi:open="true"
-           transform="scale(-1,-1)"
-           inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
-           inkscape:export-xdpi="90"
-           inkscape:export-ydpi="90" />
-        <path
-           sodipodi:type="arc"
-           style="fill:#ffffff;fill-opacity:0.44976077;stroke:#000000;stroke-width:4.2705245;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-           id="path12773-5-58-28-8-0-4-8-4-9"
-           sodipodi:cx="1248.796"
-           sodipodi:cy="-2503.6235"
-           sodipodi:rx="30.708702"
-           sodipodi:ry="30.708702"
-           d="m 1279.5047,-2503.6235 c 0,16.9599 -13.7487,30.7087 -30.7087,30.7087 -16.9599,0 -30.7087,-13.7488 -30.7087,-30.7087 0,-16.96 13.7488,-30.7087 30.7087,-30.7087 16.5865,0 30.1757,13.1711 30.6937,29.7495"
-           sodipodi:start="0"
-           sodipodi:end="6.2519454"
-           sodipodi:open="true"
-           transform="scale(-1,-1)"
-           inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
-           inkscape:export-xdpi="90"
-           inkscape:export-ydpi="90" />
-        <path
-           style="fill:none;stroke:#0000ff;stroke-width:12.23727131;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#marker17025-9)"
-           d="m -1443.5943,2571.3724 c -27.9382,-24.0428 -50.4427,-3.2701 -51.3385,15.3235 -0.8964,18.5936 20.6236,42.2836 54.0606,21.6485"
-           id="path12799-3-0-08-06-5-3-6-5-2"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="csc"
-           inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
-           inkscape:export-xdpi="90"
-           inkscape:export-ydpi="90" />
-        <text
-           xml:space="preserve"
-           style="font-size:31.13455009px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold Italic"
-           x="-1260.3605"
-           y="2700.7239"
-           id="text15034-89-3-57-5-7-0-5-2"
-           sodipodi:linespacing="125%"
-           inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
-           inkscape:export-xdpi="90"
-           inkscape:export-ydpi="90"><tspan
-             sodipodi:role="line"
-             id="tspan15036-5-84-5-2-13-0-5-4"
-             x="-1260.3605"
-             y="2700.7239">S</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-size:31.13455009px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold Italic"
-           x="-1259.9562"
-           y="2514.5959"
-           id="text15034-0-7-67-5-9-9-6-6-7"
-           sodipodi:linespacing="125%"
-           inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
-           inkscape:export-xdpi="90"
-           inkscape:export-ydpi="90"><tspan
-             sodipodi:role="line"
-             id="tspan15036-1-67-18-0-02-6-4-0-7"
-             x="-1259.9562"
-             y="2514.5959">T</tspan></text>
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:1.77675188;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#marker146359-7)"
-           d="m -1064.8753,2614.194 c 27.9383,24.0428 50.4421,3.2708 51.3385,-15.3235 0.8964,-18.5942 -20.6242,-42.283 -54.0606,-21.6478"
-           id="path12799-3-9-2-51-1-8-42-3-6-5"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="csc"
-           inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
-           inkscape:export-xdpi="90"
-           inkscape:export-ydpi="90" />
-        <path
-           sodipodi:type="arc"
-           style="fill:#ffffff;fill-opacity:0.54545456;stroke:#000000;stroke-width:4.2705245;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-           id="path12773-59-0-4-1-3-0-7-2-4"
-           sodipodi:cx="-2598.1633"
-           sodipodi:cy="-1404.2247"
-           sodipodi:rx="30.708702"
-           sodipodi:ry="30.708702"
-           d="m -2567.4546,-1404.2247 c 0,16.9599 -13.7488,30.7087 -30.7087,30.7087 -16.96,0 -30.7087,-13.7488 -30.7087,-30.7087 0,-16.96 13.7487,-30.7087 30.7087,-30.7087 16.5865,0 30.1756,13.1711 30.6937,29.7495"
-           sodipodi:start="0"
-           sodipodi:end="6.2519454"
-           sodipodi:open="true"
-           transform="matrix(0,-1,1,0,0,0)"
-           inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
-           inkscape:export-xdpi="90"
-           inkscape:export-ydpi="90" />
-        <path
-           sodipodi:type="arc"
-           style="fill:#ffffff;fill-opacity:0.44976077;stroke:#000000;stroke-width:4.2705245;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-           id="path12773-5-58-28-6-8-8-29-5-6-8"
-           sodipodi:cx="-2598.9985"
-           sodipodi:cy="-1104.6759"
-           sodipodi:rx="30.708702"
-           sodipodi:ry="30.708702"
-           d="m -2568.2898,-1104.6759 c 0,16.9599 -13.7488,30.7087 -30.7087,30.7087 -16.96,0 -30.7087,-13.7488 -30.7087,-30.7087 0,-16.96 13.7487,-30.7087 30.7087,-30.7087 16.5865,0 30.1756,13.1711 30.6937,29.7495"
-           sodipodi:start="0"
-           sodipodi:end="6.2519454"
-           sodipodi:open="true"
-           transform="matrix(0,-1,1,0,0,0)"
-           inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
-           inkscape:export-xdpi="90"
-           inkscape:export-ydpi="90" />
-        <text
-           xml:space="preserve"
-           style="font-size:31.13455009px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold Italic"
-           x="-1415.317"
-           y="2609.636"
-           id="text15034-89-3-8-7-0-5-8-99-1"
-           sodipodi:linespacing="125%"
-           inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
-           inkscape:export-xdpi="90"
-           inkscape:export-ydpi="90"><tspan
-             sodipodi:role="line"
-             id="tspan15036-5-84-8-2-40-7-1-2-2"
-             x="-1415.317"
-             y="2609.636">R</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-size:31.13455009px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold Italic"
-           x="-1118.798"
-           y="2609.8181"
-           id="text15034-0-7-67-8-36-9-4-0-96-8"
-           sodipodi:linespacing="125%"
-           inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
-           inkscape:export-xdpi="90"
-           inkscape:export-ydpi="90"><tspan
-             sodipodi:role="line"
-             id="tspan15036-1-67-18-5-8-1-6-9-5-9"
-             x="-1118.798"
-             y="2609.8181">P</tspan></text>
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:7.71118784;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#marker144661-4)"
-           d="m -1254.2814,2647.8019 c -26.3742,-20.9989 -35.7844,-55.9049 -9.0478,-91.7702"
-           id="path12799-9-340-7-4-4-9-4-3-5-3"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="cc"
-           inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
-           inkscape:export-xdpi="90"
-           inkscape:export-ydpi="90" />
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:2.25499678;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#marker143567-0)"
-           d="m -1403.2268,2561.6081 c 6.4909,-45.9098 52.4386,-57.2407 102.9925,-58.391"
-           id="path12799-9-340-7-4-8-79-6-9-0-3-6"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="cc"
-           inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
-           inkscape:export-xdpi="90"
-           inkscape:export-ydpi="90" />
-        <path
-           style="fill:none;stroke:#0000ff;stroke-width:9.30838299;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#marker146939-0)"
-           d="m -1244.0634,2545.4506 c 26.3742,20.9989 35.7844,55.9049 9.0478,91.7709"
-           id="path12799-9-340-7-4-3-06-2-12-2-86-8"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="cc"
-           inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
-           inkscape:export-xdpi="90"
-           inkscape:export-ydpi="90" />
-        <path
-           style="fill:none;stroke:#0000ff;stroke-width:13.37056541;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#marker145229-2)"
-           d="m -1287.9889,2693.828 c -46.2453,-3.3453 -95.6907,-2.8345 -109.5066,-46.8833"
-           id="path12799-9-340-7-4-8-3-54-5-3-6-7-0"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="cc"
-           inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
-           inkscape:export-xdpi="90"
-           inkscape:export-ydpi="90" />
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:7.22729349;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#marker144111-4)"
-           d="m -1210.4683,2503.2075 c 46.2285,3.5741 83.1992,1.3642 96.7972,45.4812"
-           id="path12799-9-340-7-4-8-9-1-1-4-1-4-3-2"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="cc"
-           inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
-           inkscape:export-xdpi="90"
-           inkscape:export-ydpi="90" />
-        <path
-           style="fill:none;stroke:#0000ff;stroke-width:12.71551514;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#marker145791-5)"
-           d="m -1104.5796,2635.8264 c -4.7912,41.9444 -47.3403,51.0089 -92.7951,55.5578"
-           id="path12799-9-340-7-4-8-4-67-4-81-3-6-1"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="cc"
-           inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
-           inkscape:export-xdpi="90"
-           inkscape:export-ydpi="90" />
-        <text
-           xml:space="preserve"
-           style="font-size:23.18762779px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-           x="-1156.9269"
-           y="2500.0164"
-           id="text15961-28-9-3-8-02-0"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             x="-1156.9269"
-             y="2500.0164"
-             id="tspan20827-9-8-6-6-5">28.00</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-size:23.18762779px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-           x="-1213.1144"
-           y="2603.4197"
-           id="text15969-5-3-9-7-9-1"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             x="-1213.1144"
-             y="2603.4197"
-             id="tspan31458-2-0-30-1">72.00</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-size:23.18762779px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-           x="-1422.1525"
-           y="2502.6162"
-           id="text15973-4-05-4-8-8-0"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             id="tspan15975-33-0-5-1-7-8"
-             x="-1422.1525"
-             y="2502.6162">10.11</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-size:23.18762779px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-           x="-1507.9943"
-           y="2644.1079"
-           id="text15977-99-2-1-9-6-5"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             id="tspan15979-6-9-0-8-5-0"
-             x="-1507.9943"
-             y="2644.1079">89.89</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-size:23.18762779px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-           x="-1056.6263"
-           y="2648.0076"
-           id="text15981-0-4-0-1-2-6"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             x="-1056.6263"
-             y="2648.0076"
-             id="tspan20831-3-1-6-40-4">11.11</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-size:23.18762779px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-           x="-1150.7018"
-           y="2706.5605"
-           id="text15985-604-5-3-4-0-6"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             x="-1150.7018"
-             y="2706.5605"
-             id="tspan31472-3-8-6-2">88.89</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-size:23.18762779px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-           x="-1355.568"
-           y="2606.3533"
-           id="text15989-8-7-0-5-8-5"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             id="tspan15991-2-4-0-0-5-8"
-             x="-1355.568"
-             y="2606.3533">8.73</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-size:23.18762779px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-           x="-1408.2936"
-           y="2714.6582"
-           id="text15993-3-3-0-1-49-6"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             id="tspan15995-7-1-2-5-4-2"
-             x="-1408.2936"
-             y="2714.6582">91.23</tspan></text>
-      </g>
-      <g
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/guille/Documents/github_Repository/experimento/Experimento-Meli--iPD/figuras/figuras para Segio/graf_CD_CC.pdf"
-         transform="matrix(0.43131058,0,0,0.43131058,-41.566507,279.07544)"
-         id="g9444">
-        <path
-           sodipodi:type="arc"
-           style="fill:none;stroke:#000000;stroke-width:4.49653292;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-           id="path12773-59-0-1-22-7-7-9-3-2-8"
-           sodipodi:cx="-553.86273"
-           sodipodi:cy="-1021.6916"
-           sodipodi:rx="32.333893"
-           sodipodi:ry="32.333893"
-           d="m -521.52884,-1021.6916 c 0,17.8575 -14.47638,32.3339 -32.33389,32.3339 -17.85752,0 -32.33389,-14.4764 -32.33389,-32.3339 0,-17.8575 14.47637,-32.3339 32.33389,-32.3339 17.46431,0 31.77262,13.8682 32.31811,31.324"
-           sodipodi:start="0"
-           sodipodi:end="6.2519454"
-           sodipodi:open="true"
-           transform="scale(-1,-1)"
-           inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
-           inkscape:export-xdpi="90"
-           inkscape:export-ydpi="90" />
-        <path
-           sodipodi:type="arc"
-           style="fill:none;stroke:#000000;stroke-width:4.49653292;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-           id="path12773-5-58-28-8-0-4-8-5-0-4-4"
-           sodipodi:cx="-554.74298"
-           sodipodi:cy="-824.29657"
-           sodipodi:rx="32.333893"
-           sodipodi:ry="32.333893"
-           d="m -522.40909,-824.29657 c 0,17.85752 -14.47638,32.33389 -32.33389,32.33389 -17.85752,0 -32.33389,-14.47637 -32.33389,-32.33389 0,-17.85752 14.47637,-32.33389 32.33389,-32.33389 17.46431,0 31.77262,13.86816 32.31812,31.32395"
-           sodipodi:start="0"
-           sodipodi:end="6.2519454"
-           sodipodi:open="true"
-           transform="scale(-1,-1)"
-           inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
-           inkscape:export-xdpi="90"
-           inkscape:export-ydpi="90" />
-        <path
-           style="fill:none;stroke:#0000ff;stroke-width:8.00499725;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#marker7259-8)"
-           d="m 349.63421,895.63168 c -29.4168,-25.3156 -53.1118,-3.4435 -54.0553,16.1346 -0.9441,19.5771 21.7154,44.5209 56.9215,22.7943"
-           id="path12799-3-0-08-06-5-3-6-0-0-7-7"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="csc"
-           inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
-           inkscape:export-xdpi="90"
-           inkscape:export-ydpi="90" />
-        <text
-           xml:space="preserve"
-           style="font-size:32.78227997px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold Italic"
-           x="542.56537"
-           y="1031.8278"
-           id="text15034-89-3-57-5-7-0-2-4-0-2"
-           sodipodi:linespacing="125%"
-           inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
-           inkscape:export-xdpi="90"
-           inkscape:export-ydpi="90"><tspan
-             sodipodi:role="line"
-             id="tspan15036-5-84-5-2-13-0-7-8-4-4"
-             x="542.56537"
-             y="1031.8278">S</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-size:32.78227997px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold Italic"
-           x="542.99054"
-           y="835.8493"
-           id="text15034-0-7-67-5-9-9-6-2-2-9-0"
-           sodipodi:linespacing="125%"
-           inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
-           inkscape:export-xdpi="90"
-           inkscape:export-ydpi="90"><tspan
-             sodipodi:role="line"
-             id="tspan15036-1-67-18-0-02-6-4-8-2-6-6"
-             x="542.99054"
-             y="835.8493">T</tspan></text>
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:6.63471699;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#TriangleOutM-3-3)"
-           d="m 748.39632,940.71968 c 29.4167,25.3151 53.1118,3.4435 54.0558,-16.1346 0.9436,-19.5781 -21.7159,-44.5209 -56.922,-22.7938"
-           id="path12799-3-9-2-51-1-8-42-3-1-0-5-2"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="csc"
-           inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
-           inkscape:export-xdpi="90"
-           inkscape:export-ydpi="90" />
-        <path
-           sodipodi:type="arc"
-           style="fill:none;stroke:#000000;stroke-width:4.49653292;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-           id="path12773-59-0-4-1-3-0-7-7-2-46-9"
-           sodipodi:cx="-923.83929"
-           sodipodi:cy="391.08762"
-           sodipodi:rx="32.333893"
-           sodipodi:ry="32.333893"
-           d="m -891.5054,391.08762 c 0,17.85751 -14.47638,32.33389 -32.33389,32.33389 -17.85752,0 -32.3339,-14.47638 -32.3339,-32.33389 0,-17.85752 14.47638,-32.3339 32.3339,-32.3339 17.4643,0 31.77262,13.86817 32.31811,31.32395"
-           sodipodi:start="0"
-           sodipodi:end="6.2519454"
-           sodipodi:open="true"
-           transform="matrix(0,-1,1,0,0,0)"
-           inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
-           inkscape:export-xdpi="90"
-           inkscape:export-ydpi="90" />
-        <path
-           sodipodi:type="arc"
-           style="fill:none;stroke:#000000;stroke-width:4.49653292;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-           id="path12773-5-58-28-6-8-8-29-5-7-4-4-9"
-           sodipodi:cx="-924.71893"
-           sodipodi:cy="706.48895"
-           sodipodi:rx="32.333893"
-           sodipodi:ry="32.333893"
-           d="m -892.38504,706.48895 c 0,17.85752 -14.47638,32.3339 -32.33389,32.3339 -17.85752,0 -32.3339,-14.47638 -32.3339,-32.3339 0,-17.85751 14.47638,-32.33389 32.3339,-32.33389 17.46431,0 31.77262,13.86816 32.31811,31.32395"
-           sodipodi:start="0"
-           sodipodi:end="6.2519454"
-           sodipodi:open="true"
-           transform="matrix(0,-1,1,0,0,0)"
-           inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
-           inkscape:export-xdpi="90"
-           inkscape:export-ydpi="90" />
-        <text
-           xml:space="preserve"
-           style="font-size:32.78227997px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold Italic"
-           x="379.40878"
-           y="935.91913"
-           id="text15034-89-3-8-7-0-5-8-9-5-2-0"
-           sodipodi:linespacing="125%"
-           inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
-           inkscape:export-xdpi="90"
-           inkscape:export-ydpi="90"><tspan
-             sodipodi:role="line"
-             id="tspan15036-5-84-8-2-40-7-1-7-8-5-8"
-             x="379.40878"
-             y="935.91913">R</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-size:32.78227997px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold Italic"
-           x="691.62115"
-           y="936.11078"
-           id="text15034-0-7-67-8-36-9-4-0-9-4-1-1"
-           sodipodi:linespacing="125%"
-           inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
-           inkscape:export-xdpi="90"
-           inkscape:export-ydpi="90"><tspan
-             sodipodi:role="line"
-             id="tspan15036-1-67-18-5-8-1-6-9-8-0-6-3"
-             x="691.62115"
-             y="936.11078">P</tspan></text>
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:4.67085314;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#TriangleOutM-3-3)"
-           d="m 548.96672,976.10588 c -27.7703,-22.1102 -37.6787,-58.8636 -9.5269,-96.6271"
-           id="path12799-9-340-7-4-4-9-4-3-8-8-1-1"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="cc"
-           inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
-           inkscape:export-xdpi="90"
-           inkscape:export-ydpi="90" />
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:7.25882006;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#TriangleOutM-3-3)"
-           d="m 392.13832,885.35048 c 6.8341,-48.3397 55.214,-60.2699 108.4433,-61.481"
-           id="path12799-9-340-7-4-8-79-6-9-0-9-4-3-1"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="cc"
-           inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
-           inkscape:export-xdpi="90"
-           inkscape:export-ydpi="90" />
-        <path
-           style="fill:none;stroke:#0000ff;stroke-width:6.36768055;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#marker7252-4)"
-           d="m 559.72492,868.33798 c 27.7703,22.1101 37.6787,58.8635 9.5269,96.6276"
-           id="path12799-9-340-7-4-3-06-2-12-2-8-2-77-0"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="cc"
-           inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
-           inkscape:export-xdpi="90"
-           inkscape:export-ydpi="90" />
-        <path
-           style="fill:none;stroke:#0000ff;stroke-width:10.58838654;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#marker7255-6)"
-           d="m 513.47522,1024.5682 c -48.6933,-3.5229 -100.7552,-2.9847 -115.3024,-49.36522"
-           id="path12799-9-340-7-4-8-3-54-5-3-6-0-5-1-3"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="cc"
-           inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
-           inkscape:export-xdpi="90"
-           inkscape:export-ydpi="90" />
-        <path
-           style="fill:none;stroke:#ff0000;stroke-width:8.8915596;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#TriangleOutM-3-3)"
-           d="m 595.09842,823.85928 c 48.6749,3.763 87.6023,1.4365 101.92,47.8881"
-           id="path12799-9-340-7-4-8-9-1-1-4-1-4-5-4-2-4"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="cc"
-           inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
-           inkscape:export-xdpi="90"
-           inkscape:export-ydpi="90" />
-        <path
-           style="fill:none;stroke:#0000ff;stroke-width:8.62452221;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#marker7263-3)"
-           d="m 706.59052,963.49668 c -5.0447,44.16432 -49.8453,53.70842 -97.7059,58.49832"
-           id="path12799-9-340-7-4-8-4-67-4-81-3-2-2-1-0"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="cc"
-           inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
-           inkscape:export-xdpi="90"
-           inkscape:export-ydpi="90" />
-        <text
-           xml:space="preserve"
-           style="font-size:24.41478348px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-           x="651.47223"
-           y="820.49823"
-           id="text15961-28-9-3-8-0-7-0-3"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             x="651.47223"
-             y="820.49823"
-             id="tspan20827-9-8-6-2-5-8-9">51.23</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-size:24.41478348px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-           x="592.31281"
-           y="929.37421"
-           id="text15969-5-3-9-7-4-7-9-1"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             x="592.31281"
-             y="929.37421"
-             id="tspan31458-2-0-3-5-0-9">48.77</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-size:24.41478348px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-           x="372.21225"
-           y="823.23602"
-           id="text15973-4-05-4-8-7-2-1-6"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             id="tspan15975-33-0-5-1-3-2-3-9"
-             x="372.21225"
-             y="823.23602">37.48</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-size:24.41478348px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-           x="281.82712"
-           y="972.21527"
-           id="text15977-99-2-1-9-0-8-48-3"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             x="281.82712"
-             y="972.21527"
-             id="tspan61270-5-3">62.52</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-size:24.41478348px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-           x="792.24261"
-           y="980.71625"
-           id="text15981-0-4-0-1-1-6-8-8"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             x="792.24261"
-             y="980.71625"
-             id="tspan20831-3-1-6-5-0-2-0">28.99</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-size:24.41478348px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-           x="658.02887"
-           y="1037.9735"
-           id="text15985-604-5-3-4-8-0-2-5"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             x="658.02887"
-             y="1037.9735"
-             id="tspan31472-3-8-0-9-0-6">71.01</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-size:24.41478348px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-           x="442.31931"
-           y="932.46283"
-           id="text15989-8-7-0-5-0-1-6-6"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             id="tspan15991-2-4-0-0-0-2-3-4"
-             x="442.31931"
-             y="932.46283">22.79</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-size:24.41478348px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-           x="386.80389"
-           y="1046.4999"
-           id="text15993-3-3-0-1-4-6-6-0"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             x="386.80389"
-             y="1046.4999"
-             id="tspan61266-1-0">77.21</tspan></text>
-      </g>
-    </g>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:37.5px;line-height:125%;font-family:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-font-specification:Arial;font-stretch:normal;font-variant:normal;"
@@ -20280,7 +19659,7 @@
            height="115.49999"
            x="-32.5"
            y="814.36218" /></flowRegion><flowPara
-         id="flowPara17463"></flowPara></flowRoot>    <g
+         id="flowPara17463" /></flowRoot>    <g
        id="g17522"
        transform="translate(-40.533608,0)">
       <path
@@ -20458,6 +19837,621 @@
            x="377.08176"
            id="tspan17455-9"
            sodipodi:role="line">0.4</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="-659.0235"
+         y="1049.5338"
+         id="text8577"
+         sodipodi:linespacing="125%"
+         transform="translate(40.533603,0)"><tspan
+           sodipodi:role="line"
+           x="-659.0235"
+           y="1049.5338"
+           id="tspan8581">A delicate balance between reward contrast and temptation</tspan><tspan
+           sodipodi:role="line"
+           x="-659.0235"
+           y="1074.5338"
+           id="tspan8583"> favours high cooperation levels in the IPD.</tspan></text>
     </g>
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:5.26278782;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#marker17025)"
+       d="m -568.53597,262.71333 c -12.01517,-10.33989 -21.6935,-1.40634 -22.07875,6.59006 -0.38551,7.99641 8.86943,18.18458 23.24942,9.3102"
+       id="path12799-3-0-08-06-5-3-6-5-8-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csc"
+       inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       id="g8566">
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
+         transform="matrix(-0.43006221,0,0,-0.43006221,74.90065,-842.89877)"
+         sodipodi:open="true"
+         sodipodi:end="6.2519454"
+         sodipodi:start="0"
+         d="m 1280.3407,-2691.0974 a 30.708702,30.708702 0 1 1 -0.015,-0.9592"
+         sodipodi:ry="30.708702"
+         sodipodi:rx="30.708702"
+         sodipodi:cy="-2691.0974"
+         sodipodi:cx="1249.632"
+         id="path12773-59-0-1-22-7-7-6-3-7"
+         style="fill:#ffffff;fill-opacity:0.54545456;stroke:#000000;stroke-width:4.2705245;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         sodipodi:type="arc" />
+      <text
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
+         sodipodi:linespacing="125%"
+         id="text15034-89-3-57-5-7-0-5-9-2"
+         y="318.58051"
+         x="-467.13275"
+         style="font-size:13.3897934px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold Italic"
+         xml:space="preserve"><tspan
+           y="318.58051"
+           x="-467.13275"
+           id="tspan15036-5-84-5-2-13-0-5-6-2"
+           sodipodi:role="line">S</tspan></text>
+    </g>
+    <g
+       id="g8556">
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
+         transform="matrix(-0.43006221,0,0,-0.43006221,74.90065,-866.89877)"
+         sodipodi:open="true"
+         sodipodi:end="6.2519454"
+         sodipodi:start="0"
+         d="m 1279.5047,-2503.6235 a 30.708702,30.708702 0 1 1 -0.015,-0.9592"
+         sodipodi:ry="30.708702"
+         sodipodi:rx="30.708702"
+         sodipodi:cy="-2503.6235"
+         sodipodi:cx="1248.796"
+         id="path12773-5-58-28-8-0-4-8-4-1-5"
+         style="fill:#ffffff;fill-opacity:0.44976077;stroke:#000000;stroke-width:4.2705245;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         sodipodi:type="arc" />
+      <text
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
+         sodipodi:linespacing="125%"
+         id="text15034-0-7-67-5-9-9-6-6-4-8"
+         y="214.53392"
+         x="-466.95889"
+         style="font-size:13.3897934px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold Italic"
+         xml:space="preserve"><tspan
+           y="214.53392"
+           x="-466.95889"
+           id="tspan15036-1-67-18-0-02-6-4-0-3-9"
+           sodipodi:role="line">T</tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.76411384;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#marker146359)"
+       d="m -367.062,267.3673 c 12.01521,10.3399 21.69325,1.40664 22.07875,-6.59006 0.38551,-7.99666 -8.86969,-18.18432 -23.24942,-9.3099"
+       id="path12799-3-9-2-51-1-8-42-3-6-3-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csc"
+       inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       id="g8551"
+       style="opacity:0.9"
+       transform="matrix(1.2389426,0,0,1.2389426,131.21013,-65.613165)">
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
+         transform="matrix(0,-0.43006221,0.43006221,0,68.90065,-856.89877)"
+         sodipodi:open="true"
+         sodipodi:end="6.2519454"
+         sodipodi:start="0"
+         d="m -2567.4546,-1404.2247 c 0,16.9599 -13.7488,30.7087 -30.7087,30.7087 -16.96,0 -30.7087,-13.7488 -30.7087,-30.7087 0,-16.96 13.7487,-30.7087 30.7087,-30.7087 16.5865,0 30.1756,13.1711 30.6937,29.7495"
+         sodipodi:ry="30.708702"
+         sodipodi:rx="30.708702"
+         sodipodi:cy="-1404.2247"
+         sodipodi:cx="-2598.1633"
+         id="path12773-59-0-4-1-3-0-7-2-3-3"
+         style="fill:#ffffff;fill-opacity:0.54545456;stroke:#000000;stroke-width:4.2705245;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         sodipodi:type="arc" />
+      <text
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
+         sodipodi:linespacing="125%"
+         id="text15034-89-3-8-7-0-5-8-99-0-1"
+         y="265.40704"
+         x="-539.77374"
+         style="font-size:13.3897934px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold Italic"
+         xml:space="preserve"><tspan
+           y="265.40704"
+           x="-539.77374"
+           id="tspan15036-5-84-8-2-40-7-1-2-4-2"
+           sodipodi:role="line">R</tspan></text>
+    </g>
+    <g
+       id="g8571">
+      <g
+         id="g8561">
+        <path
+           sodipodi:type="arc"
+           style="fill:#ffffff;fill-opacity:0.44976077;stroke:#000000;stroke-width:4.2705245;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+           id="path12773-5-58-28-6-8-8-29-5-6-86-6"
+           sodipodi:cx="-2598.9985"
+           sodipodi:cy="-1104.6759"
+           sodipodi:rx="30.708702"
+           sodipodi:ry="30.708702"
+           d="m -2568.2898,-1104.6759 a 30.708702,30.708702 0 1 1 -0.015,-0.9592"
+           sodipodi:start="0"
+           sodipodi:end="6.2519454"
+           sodipodi:open="true"
+           transform="matrix(0,-0.43006221,0.43006221,0,80.90065,-856.89877)"
+           inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
+           inkscape:export-xdpi="90"
+           inkscape:export-ydpi="90" />
+        <text
+           xml:space="preserve"
+           style="font-size:13.3897934px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold Italic"
+           x="-400.25208"
+           y="265.48541"
+           id="text15034-0-7-67-8-36-9-4-0-96-88-9"
+           sodipodi:linespacing="125%"
+           inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
+           inkscape:export-xdpi="90"
+           inkscape:export-ydpi="90"><tspan
+             sodipodi:role="line"
+             id="tspan15036-1-67-18-5-8-1-6-9-5-8-3"
+             x="-400.25208"
+             y="265.48541">P</tspan></text>
+      </g>
+    </g>
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:3.31629038;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#marker144661)"
+       d="m -472.51841,281.82078 c -11.34254,-9.03083 -15.38951,-24.04258 -3.89111,-39.46689"
+       id="path12799-9-340-7-4-4-9-4-3-5-9-1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.96978891;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#marker143567)"
+       d="m -536.57419,234.75209 c 2.79149,-19.74407 22.55186,-24.61706 44.29318,-25.11176"
+       id="path12799-9-340-7-4-8-79-6-9-0-3-7-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:4.00318384;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#marker146939)"
+       d="m -454.12403,237.80336 c 11.34255,9.03083 15.38952,24.04258 3.89112,39.46719"
+       id="path12799-9-340-7-4-3-06-2-12-2-86-7-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:5.750175;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#marker145229)"
+       d="m -485.01473,315.91549 c -19.88835,-1.43868 -41.15295,-1.21901 -47.09465,-20.16273"
+       id="path12799-9-340-7-4-8-3-54-5-3-6-7-6-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:3.10818577;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#marker144111)"
+       d="m -433.67605,209.6362 c 19.88113,1.53708 35.78083,0.58669 41.62882,19.55974"
+       id="path12799-9-340-7-4-8-9-1-1-4-1-4-3-4-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:5.46846247;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#marker145791)"
+       d="m -389.8367,288.39082 c -2.06051,18.0387 -20.35927,21.937 -39.90766,23.89331"
+       id="path12799-9-340-7-4-8-4-67-4-81-3-6-3-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:9.97212219px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-410.64987"
+       y="204.26378"
+       id="text15961-28-9-3-8-02-03-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="-410.64987"
+         y="204.26378"
+         id="tspan20827-9-8-6-6-0-0">37.86</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:9.97212219px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-442.814"
+       y="242.73364"
+       id="text15969-5-3-9-7-9-9-3"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="-442.814"
+         y="242.73364"
+         id="tspan31458-2-0-30-2-6">62.14</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:9.97212219px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-544.71338"
+       y="205.38188"
+       id="text15973-4-05-4-8-8-5-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan15975-33-0-5-1-7-4-0"
+         x="-544.71338"
+         y="205.38188">11.33</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:9.97212219px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-594.51172"
+       y="245.82713"
+       id="text15977-99-2-1-9-6-0-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan15979-6-9-0-8-5-5-3"
+         x="-594.51172"
+         y="245.82713">88.67</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:9.97212219px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-361.79419"
+       y="284.48962"
+       id="text15981-0-4-0-1-2-9-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="-361.79419"
+         y="284.48962"
+         id="tspan20831-3-1-6-40-46-0">11.11</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:9.97212219px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-411.67209"
+       y="325.73389"
+       id="text15985-604-5-3-4-0-9-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="-411.67209"
+         y="325.73389"
+         id="tspan31472-3-8-6-22-1">88.89</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:9.97212219px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-512.07794"
+       y="243.9953"
+       id="text15989-8-7-0-5-8-4-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan15991-2-4-0-0-5-7-5"
+         x="-512.07794"
+         y="243.9953">3.33</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:9.97212219px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-539.46887"
+       y="325.73389"
+       id="text15993-3-3-0-1-49-7-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan15995-7-1-2-5-4-5-7"
+         x="-539.46887"
+         y="325.73389">96.67</tspan></text>
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#000000;stroke-width:4.49653292;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path12773-59-0-1-22-7-7-9-3-2-4-6"
+       sodipodi:cx="1735.1769"
+       sodipodi:cy="-2552.7502"
+       sodipodi:rx="32.333893"
+       sodipodi:ry="32.333893"
+       d="m 1767.5108,-2552.7502 a 32.333893,32.333893 0 1 1 -0.016,-1.01"
+       sodipodi:start="0"
+       sodipodi:end="6.2519454"
+       sodipodi:open="true"
+       transform="matrix(-0.43006221,0,0,-0.43006221,283.82353,-630.78572)"
+       inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#000000;stroke-width:4.49653292;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path12773-5-58-28-8-0-4-8-5-0-4-8-5"
+       sodipodi:cx="1734.2966"
+       sodipodi:cy="-2355.3552"
+       sodipodi:rx="32.333893"
+       sodipodi:ry="32.333893"
+       d="m 1766.6305,-2355.3552 a 32.333893,32.333893 0 1 1 -0.016,-1.01"
+       sodipodi:start="0"
+       sodipodi:end="6.2519454"
+       sodipodi:open="true"
+       transform="matrix(-0.43006221,0,0,-0.43006221,283.82353,-630.78572)"
+       inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:3.44264674;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#marker7259)"
+       d="m -554.14277,424.88383 c -12.65105,-10.88728 -22.84138,-1.48092 -23.24714,6.93888 -0.40602,8.41938 9.33897,19.14676 24.47979,9.80297"
+       id="path12799-3-0-08-06-5-3-6-0-0-7-1-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csc"
+       inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:14.09842014px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold Italic"
+       x="-467.26904"
+       y="471.41492"
+       id="text15034-89-3-57-5-7-0-2-4-0-28-9"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan15036-5-84-5-2-13-0-7-8-4-9-3"
+         x="-467.26904"
+         y="471.41492">S</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14.09842014px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold Italic"
+       x="-467.08621"
+       y="387.13196"
+       id="text15034-0-7-67-5-9-9-6-2-2-9-3-7"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan15036-1-67-18-0-02-6-4-8-2-6-68-4"
+         x="-467.08621"
+         y="387.13196">T</tspan></text>
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:2.8533411;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#TriangleOutM-3)"
+       d="m -378.74894,432.23274 c 12.65101,10.88706 22.84137,1.48091 23.24735,-6.93889 0.40581,-8.4198 -9.33919,-19.14675 -24.48,-9.80275"
+       id="path12799-3-9-2-51-1-8-42-3-1-0-5-0-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csc"
+       inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#000000;stroke-width:4.49653292;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path12773-59-0-4-1-3-0-7-7-2-46-2-2"
+       sodipodi:cx="-2454.8979"
+       sodipodi:cy="-1897.952"
+       sodipodi:rx="32.333893"
+       sodipodi:ry="32.333893"
+       d="m -2422.5641,-1897.952 a 32.333893,32.333893 0 1 1 -0.016,-1.01"
+       sodipodi:start="0"
+       sodipodi:end="6.2519454"
+       sodipodi:open="true"
+       transform="matrix(0,-0.43006221,0.43006221,0,283.82353,-630.78572)"
+       inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#000000;stroke-width:4.49653292;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path12773-5-58-28-6-8-8-29-5-7-4-4-1-5"
+       sodipodi:cx="-2455.7776"
+       sodipodi:cy="-1582.5507"
+       sodipodi:rx="32.333893"
+       sodipodi:ry="32.333893"
+       d="m -2423.4437,-1582.5507 a 32.333893,32.333893 0 1 1 -0.016,-1.0099"
+       sodipodi:start="0"
+       sodipodi:end="6.2519454"
+       sodipodi:open="true"
+       transform="matrix(0,-0.43006221,0.43006221,0,283.82353,-630.78572)"
+       inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:14.09842014px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold Italic"
+       x="-537.43658"
+       y="430.16821"
+       id="text15034-89-3-8-7-0-5-8-9-5-2-05-4"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan15036-5-84-8-2-40-7-1-7-8-5-1-7"
+         x="-537.43658"
+         y="430.16821">R</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14.09842014px;font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold Italic"
+       x="-403.1658"
+       y="430.25061"
+       id="text15034-0-7-67-8-36-9-4-0-9-4-1-10-4"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan15036-1-67-18-5-8-1-6-9-8-0-6-8-4"
+         x="-403.1658"
+         y="430.25061">P</tspan></text>
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:2.00875735;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#TriangleOutM-3)"
+       d="m -464.51608,447.451 c -11.94296,-9.50876 -16.20419,-25.31501 -4.09716,-41.55566"
+       id="path12799-9-340-7-4-4-9-4-3-8-8-1-5-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:3.12174416;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#TriangleOutM-3)"
+       d="m -531.96205,408.42054 c 2.93909,-20.78908 23.74545,-25.91981 46.63736,-26.44066"
+       id="path12799-9-340-7-4-8-79-6-9-0-9-4-3-0-0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:2.73849869;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#marker7252)"
+       d="m -459.88939,401.1041 c 11.94296,9.50872 16.20419,25.31497 4.09716,41.55588"
+       id="path12799-9-340-7-4-3-06-2-12-2-8-2-77-6-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:4.55366468;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#marker7255)"
+       d="m -479.77964,472.59343 c -20.94114,-1.51506 -43.331,-1.2836 -49.5872,-21.23011"
+       id="path12799-9-340-7-4-8-3-54-5-3-6-0-5-1-4-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:3.82392383;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#TriangleOutM-3)"
+       d="m -441.23609,379.39512 c 20.93324,1.61832 37.67444,0.61778 43.83195,20.59486"
+       id="path12799-9-340-7-4-8-9-1-1-4-1-4-5-4-2-6-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:3.70908117;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#marker7263)"
+       d="m -393.28754,443.74851 c -2.16954,18.9934 -21.43658,23.09795 -42.01962,25.15791"
+       id="path12799-9-340-7-4-8-4-67-4-81-3-2-2-1-2-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/home/guille/Documents/experimento/Experimento---iPD/ExtraerDatos/figura_iPD_1_2_9s_13s/markov1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:10.49987602px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-412.69119"
+       y="377.08954"
+       id="text15961-28-9-3-8-0-7-0-5-8"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="-412.69119"
+         y="377.08954"
+         id="tspan20827-9-8-6-2-5-8-8-4">55.52</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.49987602px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-445.87457"
+       y="427.35352"
+       id="text15969-5-3-9-7-4-7-9-6-3"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="-445.87457"
+         y="427.35352"
+         id="tspan31458-2-0-3-5-0-2-1">44.48</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.49987602px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-540.53149"
+       y="381.70746"
+       id="text15973-4-05-4-8-7-2-1-8-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan15975-33-0-5-1-3-2-3-4-9"
+         x="-540.53149"
+         y="381.70746">38.08</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.49987602px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-581.12091"
+       y="406.2121"
+       id="text15977-99-2-1-9-0-8-48-7-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="-581.12091"
+         y="406.2121"
+         id="tspan15178-2-0">61.92</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.49987602px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-359.8923"
+       y="449.43378"
+       id="text15981-0-4-0-1-1-6-8-4-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="-359.8923"
+         y="449.43378"
+         id="tspan20831-3-1-6-5-0-2-06-8">32.38</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.49987602px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-414.17206"
+       y="475.7782"
+       id="text15985-604-5-3-4-8-0-2-2-9"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="-414.17206"
+         y="475.7782"
+         id="tspan31472-3-8-0-9-0-9-2">67.62</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.49987602px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-510.3811"
+       y="428.68182"
+       id="text15989-8-7-0-5-0-1-6-9-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan15991-2-4-0-0-0-2-3-0-6"
+         x="-510.3811"
+         y="428.68182">20.24</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.49987602px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-534.25616"
+       y="482.88562"
+       id="text15993-3-3-0-1-4-6-6-8-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="-534.25616"
+         y="482.88562"
+         id="tspan61266-1-1-9">79.76</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.75155544px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
+       x="-587.48254"
+       y="377.43585"
+       id="text15182-3-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan15184-1-0"
+         x="-587.48254"
+         y="377.43585">T=5</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.75155544px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
+       x="-587.52191"
+       y="215.59435"
+       id="text15186-1-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan15188-0-8"
+         x="-587.52191"
+         y="215.59435">T=3</tspan></text>
   </g>
 </svg>
