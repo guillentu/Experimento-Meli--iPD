@@ -2928,11 +2928,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="-396.96354"
-     inkscape:cy="101.75075"
+     inkscape:zoom="1"
+     inkscape:cx="-494.86559"
+     inkscape:cy="751.7833"
      inkscape:document-units="px"
-     inkscape:current-layer="g17522"
+     inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1366"
      inkscape:window-height="718"
@@ -18170,22 +18170,22 @@
        id="path9882" />
     <text
        xml:space="preserve"
-       style="font-size:48px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="-4116.6426"
-       y="783.90302"
+       style="font-size:30px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-4178.8682"
+       y="803.70203"
        id="text6274"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan6276"
-         x="-4116.6426"
-         y="783.90302">evolicion palanca 1 y 2</tspan><tspan
+         x="-4178.8682"
+         y="803.70203">evolicion palanca 1 y 2</tspan><tspan
          sodipodi:role="line"
-         x="-4116.6426"
-         y="843.90302"
+         x="-4178.8682"
+         y="841.20203"
          id="tspan6278">diagrama de markov</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:48px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       style="font-size:30.00000063px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        x="-4158.6426"
        y="931.90289"
        id="text6280"
@@ -19839,19 +19839,18 @@
            sodipodi:role="line">0.4</tspan></text>
       <text
          xml:space="preserve"
-         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
-         x="-659.0235"
-         y="1049.5338"
+         style="font-size:30px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="-4313.748"
+         y="660.36169"
          id="text8577"
-         sodipodi:linespacing="125%"
-         transform="translate(40.533603,0)"><tspan
+         sodipodi:linespacing="125%"><tspan
            sodipodi:role="line"
-           x="-659.0235"
-           y="1049.5338"
+           x="-4313.748"
+           y="660.36169"
            id="tspan8581">A delicate balance between reward contrast and temptation</tspan><tspan
            sodipodi:role="line"
-           x="-659.0235"
-           y="1074.5338"
+           x="-4313.748"
+           y="697.86169"
            id="tspan8583"> favours high cooperation levels in the IPD.</tspan></text>
     </g>
     <path
@@ -19941,7 +19940,7 @@
     <g
        id="g8551"
        style="opacity:0.9"
-       transform="matrix(1.2389426,0,0,1.2389426,131.21013,-65.613165)">
+       transform="matrix(1.4159345,0,0,1.4159345,218.40137,-106.21478)">
       <path
          inkscape:export-ydpi="90"
          inkscape:export-xdpi="90"
@@ -19974,7 +19973,8 @@
            sodipodi:role="line">R</tspan></text>
     </g>
     <g
-       id="g8571">
+       id="g8571"
+       transform="translate(2,2)">
       <g
          id="g8561">
         <path
@@ -19985,7 +19985,7 @@
            sodipodi:cy="-1104.6759"
            sodipodi:rx="30.708702"
            sodipodi:ry="30.708702"
-           d="m -2568.2898,-1104.6759 a 30.708702,30.708702 0 1 1 -0.015,-0.9592"
+           d="m -2568.2898,-1104.6759 c 0,16.9599 -13.7488,30.7087 -30.7087,30.7087 -16.96,0 -30.7087,-13.7488 -30.7087,-30.7087 0,-16.96 13.7487,-30.7087 30.7087,-30.7087 16.5865,0 30.1756,13.1711 30.6937,29.7495"
            sodipodi:start="0"
            sodipodi:end="6.2519454"
            sodipodi:open="true"
