@@ -69,6 +69,7 @@ else
   ylabel ("prob(pCD)");
   zlabel ("I");
   title ("Indice con a=5 b=2");
+
 %  figure;
 %  [xx, yy] = meshgrid (pT, pR);
 %  mesh (pT, pR, R');
