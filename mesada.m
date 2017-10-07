@@ -524,7 +524,7 @@ load('secuencias_T4_5');
 exp_T3=squeeze(sum(_tracking_T3(:,:,[1 3 4]),2));
 exp_T4=squeeze(sum(_tracking_T4(:,:,[1 3 4]),2));
 exp_T5=squeeze(sum(_tracking_T5(:,:,[1 3 4]),2));
-
+n=1;
 %squeeze(_tracking_T3(:,:,[1 3 4])(1,:))
 
 cd_T3=jackknife(@sem_dep,squeeze((_tracking_T3(:,:,[1 3 4])/n(1))(1,:)));
@@ -556,6 +556,7 @@ set(H,'linewidth',3);
 
 % Plot CC vs DD
 figure;hold on;
+
 plot((exp_T3./n)(4,:)',(exp_T3./n)(3,:)','ok','MarkerFaceColor','k','MarkerSize',15)
 plot((exp_T5./n)(4,:)',(exp_T5./n)(3,:)','ob','MarkerFaceColor','b','MarkerSize',15)
 xlabel("DD");

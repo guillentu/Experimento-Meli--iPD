@@ -475,11 +475,11 @@ hold off;
 if (strcmp(_experimento,"T=3"))
   name=strcat("figuras/meanCvsReward",_txtSujetos(i,:));
   name=strcat(name,".png");
-  print(hhh, name);
+  %print(hhh, name);
 elseif
   name=strcat("figuras/iPD2/meanCvsReward",(_txtSujetos(i,:)));
   name=strcat(name,".png");
-  print(hhh, name);
+  %print(hhh, name);
 endif
 
 % grafico Cooperacion Versus R
@@ -515,11 +515,11 @@ hold off;
 if (strcmp(_experimento,"T=3"))
   name=strcat("figuras/meanCvsRmutua",_txtSujetos(i,:));
   name=strcat(name,".png");
-  print(hhh, name);
+  %print(hhh, name);
 elseif
   name=strcat("figuras/iPD2/meanCvsRmutua",(_txtSujetos(i,:)));
   name=strcat(name,".png");
-  print(hhh, name);
+  %print(hhh, name);
 endif
 
 
@@ -555,11 +555,11 @@ hold off;
 if (strcmp(_experimento,"T=3"))
   name=strcat("figuras/RewardvsRmutua",_txtSujetos(i,:));
   name=strcat(name,".png");
-  print(hhh, name);
+  %print(hhh, name);
 elseif
   name=strcat("figuras/iPD2/RewardvsRmutua",_txtSujetos(i,:));
   name=strcat(name,".png");
-  print(hhh, name);
+  %print(hhh, name);
 endif
 
 % Tasa de alimentacion
@@ -588,11 +588,11 @@ hold off;
 if (strcmp(_experimento,"T=3"))
   name=strcat("figuras/meanCvsTimeout",_txtSujetos(i,:));
   name=strcat(name,".png");
-  print(hhh, name);
+  %print(hhh, name);
 elseif
   name=strcat("figuras/iPD2/meanCvsTimeout",_txtSujetos(i,:));
   name=strcat(name,".png");
-  print(hhh, name);
+  %print(hhh, name);
 endif
 
 

@@ -593,6 +593,7 @@ endif
 
 %ff.diff
 % promediar las tasas de cooperacion y tasas de estados de los animales que superaron el criterio
+
 _mediaT=mean(T_mean(_sujetosCooperadores));
 _mediaR=mean(R_mean(_sujetosCooperadores));
 _mediaP=mean(P_mean(_sujetosCooperadores));
@@ -635,7 +636,7 @@ else
   %print(hhh, name);
 endif
 
-
+_sujetosNocooperadores=[2 5 6];
 _mediaT=mean(T_mean(_sujetosNocooperadores));
 _mediaR=mean(R_mean(_sujetosNocooperadores));
 _mediaP=mean(P_mean(_sujetosNocooperadores));

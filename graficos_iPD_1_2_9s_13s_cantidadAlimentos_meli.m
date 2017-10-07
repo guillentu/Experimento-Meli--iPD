@@ -137,7 +137,7 @@ if (strcmp(_experimento,""))
   hh=xlabel("Sujets - Last 10 sesions");set(hh, "fontsize", 14);
   hh=ylabel("Timeout per session");set(hh, "fontsize", 14);
   hh=title(" Mean of timeout");set(hh, "fontsize", 14);
-  t=text(-.25+[1:_nSujetos], 0.55*ones(1,_nSujetos) , ptrn([1 3 4]));set(hh, "fontsize", 14);
+  t=text(-.25+[1:_nSujetos], 0.55*ones(1,_nSujetos) , ptrn);set(hh, "fontsize", 14);
   %axis([0,13,0.5,1],"square");
   legend("SEM","MEAN");
   hold off;

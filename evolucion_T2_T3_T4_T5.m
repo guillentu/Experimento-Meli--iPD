@@ -12,19 +12,19 @@ fin=[21 33 23 23 23 31 23 50 31 29 33 23];
 figure();
 hold on;
 foodMax=30;
-% i=1;plot(promediosC_T2(fin(i)-9:fin(i),i),'r','linewidth',2)
-% i=3;plot(promediosC_T2(fin(i)-9:fin(i),i),'r','linewidth',2)
-% i=7;plot(promediosC_T2(fin(i)-9:fin(i),i),'r','linewidth',2)
-% i=8;plot(promediosC_T2(fin(i)-9:fin(i),i),'r','linewidth',2)
-% i=9;plot(promediosC_T2(fin(i)-9:fin(i),i),'r','linewidth',2)
-% i=10;plot(promediosC_T2(fin(i)-9:fin(i),i),'r','linewidth',2)
-% i=11;plot(promediosC_T2(fin(i)-9:fin(i),i),'r','linewidth',2)
-% i=12;plot(promediosC_T2(fin(i)-9:fin(i),i),'r','linewidth',2)
+i=1;plot(promediosC_T2(fin(i)-9:fin(i),i),'r','linewidth',2)
+i=3;plot(promediosC_T2(fin(i)-9:fin(i),i),'r','linewidth',2)
+i=7;plot(promediosC_T2(fin(i)-9:fin(i),i),'r','linewidth',2)
+i=8;plot(promediosC_T2(fin(i)-9:fin(i),i),'r','linewidth',2)
+i=9;plot(promediosC_T2(fin(i)-9:fin(i),i),'r','linewidth',2)
+i=10;plot(promediosC_T2(fin(i)-9:fin(i),i),'r','linewidth',2)
+i=11;plot(promediosC_T2(fin(i)-9:fin(i),i),'r','linewidth',2)
+i=12;plot(promediosC_T2(fin(i)-9:fin(i),i),'r','linewidth',2)
 
-% plot(mean(foodMax*foodMedia_T2([1 3 7 8 9 10 11 12])),mean(mediaXsujeto_T2([1 3 7 8 9 10 11 12])),200,'r','filled','linewidth',3)
-% plot(mean(foodMax*foodMedia_T2([1 3 7 8 9 10 11 12])),mean(mediaXsujeto_T2([1 3 7 8 9 10 11 12])),220,'k','linewidth',1)
-% ylabel('Cooperation Mutua');
-% xlabel('Reward per session');
+plot(mean(foodMax*foodMedia_T2([1 3 7 8 9 10 11 12])),mean(mediaXsujeto_T2([1 3 7 8 9 10 11 12])),200,'r','filled','linewidth',3)
+plot(mean(foodMax*foodMedia_T2([1 3 7 8 9 10 11 12])),mean(mediaXsujeto_T2([1 3 7 8 9 10 11 12])),220,'k','linewidth',1)
+ylabel('Cooperation Mutua');
+xlabel('Reward per session');
 
 puntos=[];aux1=[];
 puntosSem=[];

@@ -72,6 +72,7 @@ title(strcat("a=",num2str(a)));
 imagesc(1:-0.01:0, pT,(R'))
 caxis([0 2.5])
 colorbar;
+plot((R_mean5([2 5 6])),(T_mean5([2 5 6])),'ok','MarkerSize',10,'linewidth',3)
 if a==5
   plot((R_mean5([1 3 4])),(T_mean5([1 3 4])),'ok','MarkerSize',10,'linewidth',3)
   plot(mean(R_mean5([1 3 4])),mean(T_mean5([1 3 4])),'og','MarkerSize',10,'linewidth',3)
@@ -93,8 +94,16 @@ else
   set(h,'linewidth',3);
 endif
 
-
-
+% Grafico frecuencia R y T con profundidad en reward
+figure;hold on;
+h=scatter(mean(R_mean5([1 3 4])),mean(T_mean5([1 3 4])),180,1*mean(R_mean5([1 3 4]))+5*mean(T_mean5([1 3 4])),'filled');
+h=scatter(mean(R_mean3([1 3 4])),mean(T_mean3([1 3 4])),180,1*mean(R_mean3([1 3 4]))+3*mean(T_mean3([1 3 4])),'filled');
+h=scatter(mean(R_mean([1 3 7 8 9 10 11 12])),mean(T_mean([1 3 7 8 9 10 11 12])),180,1*mean(R_mean([1 3 7 8 9 10 11 12]))+2*mean(T_mean([1 3 7 8 9 10 11 12])),'filled');
+ch=colormap(jet);
+caxis([0 2.5])
+colorbar;
+xlabel ("prob(CC)=R");
+ylabel ("prob(CD)=T");
 
 %figure;hold on;
 %%plot(R_mean5([2 5 6 ]),P_mean5([2 5 6]),'og','MarkerSize',10,'linewidth',3)
