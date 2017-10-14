@@ -16,7 +16,7 @@ if (strcmp(_experimento,"T=3"))
   _timeoutITI=30*5;
 else
   load "iPD_1_5_9s_13s_y_2_3_9s_13s/datosCargadosWorkspace_1_5_9_13_y_2_3_9_13_fecha_20160915";
-  _vRefuerzos=[1 0 4 0];
+  _vRefuerzos=[1 0 5 0];
   _vDelay4eat=[5 13 5 9];
   _foodLimit=15*_vRefuerzos(2)+15*_vRefuerzos(3); 
   _timeoutLimit=15*_vDelay4eat(2)+15*_vDelay4eat(3);

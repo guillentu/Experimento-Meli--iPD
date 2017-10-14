@@ -23,9 +23,14 @@ for i=1:_nSujetos
   if (strcmp(_experimento,"T=3"))
     food(:,i)=30*[TT(i,:).*3 + CC(i,:).*1 + PP(i,:).*0 + SS(i,:).*0]./_foodLimit;
   else
-    food(:,i)=30*[TT(i,:).*4 + CC(i,:).*1 + PP(i,:).*0 + SS(i,:).*0]./_foodLimit;
+    food(:,i)=30*[TT(i,:).*5 + CC(i,:).*1 + PP(i,:).*0 + SS(i,:).*0]./_foodLimit;
   endif
 endfor
+if (~strcmp(_experimento,"T=3"))
+  i=2;food(:,i)=30*[TT(i,:).*3 + CC(i,:).*2 + PP(i,:).*0 + SS(i,:).*0]./60;
+  i=5;food(:,i)=30*[TT(i,:).*3 + CC(i,:).*2 + PP(i,:).*0 + SS(i,:).*0]./60;
+  i=6;food(:,i)=30*[TT(i,:).*3 + CC(i,:).*2 + PP(i,:).*0 + SS(i,:).*0]./60;
+endif
 foodMedia=zeros(1,_nSujetos);
 foodSem=zeros(1,_nSujetos);
 for i=1:_nSujetos

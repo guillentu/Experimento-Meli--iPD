@@ -138,7 +138,7 @@ inicioAux=inicio;
 finAux=fin;
 % PLOT sujeto uno x uno
 %_sujetosCooperadores=[1 3 4];
-%_sujetosNocooperadores=[2 5 6];
+_sujetosNocooperadores=[2 5 6];
 figure();hold on;
 for i=_sujetosCooperadores%1:_nSujetos   SUJETOS CON MATRIZ 1 4 9 13
   inicioAux=1;%expXsuj(i)-_ultimosX+1;

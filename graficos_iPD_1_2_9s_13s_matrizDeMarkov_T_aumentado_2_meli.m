@@ -5,7 +5,7 @@ clear all;
 close all;
 
 _experimento="";%  T=3 ; T=5;
-%_experimento="T=3";
+_experimento="T=3";
 if (strcmp(_experimento,"T=3"))
   load( "iPD_1_3_9s_13s/datosCargadosWorkspace_3_1_9_13_fecha_20160914");
 else
