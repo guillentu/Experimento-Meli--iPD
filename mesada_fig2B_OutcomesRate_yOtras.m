@@ -445,17 +445,19 @@
 %expXsuj(1)--;
 %expXsuj(1)--;
 %_tracking=[];
-%for i=[1 3 4]%1:_nSujetos
+%for i=sujetos%1:_nSujetos
 %  todo.(indice(2,:))(i)._groupStr
 %  for j=expXsuj(i)-4:expXsuj(i)
 %    num2str(todo.(indice(j+1,:))(i)._respuestasEXP(:)')
 %  endfor
 %endfor
 
-%%%%%%%%%%% PARA OBTENER LAS SECUENCIAS DE CD DC CC DD  %%%%%%%%SAVE en secuencias_T3 y T4_5 %%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%% PARA OBTENER LAS SECUENCIAS DE CD DC CC DD  %%%%%%%%SAVE en secuencias_Outcomes_exp_R2T3_R1T3T5 %%%%%%%%%%%%%%%%%%%%%%%
 %%%%% Experimento T=3
-%_tracking_T3=zeros(4,5,3);
-%for i=[1 3 4]%1:_nSujetos
+%load datos_exp_R1T3
+%sujetos=[1 2 3 4 5 6];
+%f=zeros(4,5,length(sujetos));
+%for i=sujetos%1:_nSujetos
 %  todo.(indice(2,:))(i)._groupStr
 %  for j=expXsuj(i)-4:expXsuj(i)  %cd - dc - cc - dd
 %    %num2str(todo.(indice(j+1,:))(i)._respuestasEXP(:)')
@@ -465,31 +467,33 @@
 %    _tracking_T3(4,j+5-expXsuj(i),i)=length(find(todo.(indice(j+1,:))(i)._respuestasEXP(1:29)+todo.(indice(j+1,:))(i)._respuestasEXP(2:30)==2));
 %  endfor
 %endfor
-%
-%%%% Experimento T=4
-%%_tracking=[];
-%%for i=[1 3 4]%1:_nSujetos
-%%  todo.(indice(2,:))(i)._groupStr
-%%  for j=expXsuj(i)-4-9:expXsuj(i)-9
-%%    num2str(todo.(indice(j+1,:))(i)._respuestasEXP(:)')
-%%  endfor
-%%endfor
-%_tracking_T4=zeros(4,5,3);
-%for i=[1 3 4]%1:_nSujetos
-%  todo.(indice(2,:))(i)._groupStr
-%  k=1;
-%  for j=expXsuj(i)-4-9:expXsuj(i)-9  %cd - dc - cc - dd
-%    %num2str(todo.(indice(j+1,:))(i)._respuestasEXP(:)')
-%    _tracking_T4(1,k,i)=length(find(diff(todo.(indice(j+1,:))(i)._respuestasEXP(1:30))==-1));
-%    _tracking_T4(2,k,i)=length(find(diff(todo.(indice(j+1,:))(i)._respuestasEXP(1:30))==1));
-%    _tracking_T4(3,k,i)=length(find(todo.(indice(j+1,:))(i)._respuestasEXP(1:29)+todo.(indice(j+1,:))(i)._respuestasEXP(2:30)==4));
-%    _tracking_T4(4,k,i)=length(find(todo.(indice(j+1,:))(i)._respuestasEXP(1:29)+todo.(indice(j+1,:))(i)._respuestasEXP(2:30)==2));
-%    k++;
-%  endfor
-%endfor
+%clear -x _tracking_T3 sujetos
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Experimento T=4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%_tracking=[];
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%for i=sujetos%1:_nSujetos
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  todo.(indice(2,:))(i)._groupStr
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  for j=expXsuj(i)-4-9:expXsuj(i)-9
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%    num2str(todo.(indice(j+1,:))(i)._respuestasEXP(:)')
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  endfor
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%endfor
+%%%%%%%%%%%%%%%%%%%%%%%%%%%_tracking_T4=zeros(4,5,3);
+%%%%%%%%%%%%%%%%%%%%%%%%%%%for i=sujetos%1:_nSujetos
+%%%%%%%%%%%%%%%%%%%%%%%%%%%  todo.(indice(2,:))(i)._groupStr
+%%%%%%%%%%%%%%%%%%%%%%%%%%%  k=1;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%  for j=expXsuj(i)-4-9:expXsuj(i)-9  %cd - dc - cc - dd
+%%%%%%%%%%%%%%%%%%%%%%%%%%%    %num2str(todo.(indice(j+1,:))(i)._respuestasEXP(:)')
+%%%%%%%%%%%%%%%%%%%%%%%%%%%    _tracking_T4(1,k,i)=length(find(diff(todo.(indice(j+1,:))(i)._respuestasEXP(1:30))==-1));
+%%%%%%%%%%%%%%%%%%%%%%%%%%%    _tracking_T4(2,k,i)=length(find(diff(todo.(indice(j+1,:))(i)._respuestasEXP(1:30))==1));
+%%%%%%%%%%%%%%%%%%%%%%%%%%%    _tracking_T4(3,k,i)=length(find(todo.(indice(j+1,:))(i)._respuestasEXP(1:29)+todo.(indice(j+1,:))(i)._respuestasEXP(2:30)==4));
+%%%%%%%%%%%%%%%%%%%%%%%%%%%    _tracking_T4(4,k,i)=length(find(todo.(indice(j+1,:))(i)._respuestasEXP(1:29)+todo.(indice(j+1,:))(i)._respuestasEXP(2:30)==2));
+%%%%%%%%%%%%%%%%%%%%%%%%%%%    k++;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%  endfor
+%%%%%%%%%%%%%%%%%%%%%%%%%%%endfor
 %%%%% Experimento T=5
-%_tracking_T5=zeros(4,5,3);
-%for i=[1 3 4]%1:_nSujetos
+%load datos_exp_R1T5_y_R2T3
+%_tracking_T5=zeros(4,5,length(sujetos));
+%for i=sujetos%1:_nSujetos
 %  todo.(indice(2,:))(i)._groupStr
 %  for j=expXsuj(i)-4:expXsuj(i)  %cd - dc - cc - dd
 %    %num2str(todo.(indice(j+1,:))(i)._respuestasEXP(:)')
@@ -499,53 +503,60 @@
 %    _tracking_T5(4,j+5-expXsuj(i),i)=length(find(todo.(indice(j+1,:))(i)._respuestasEXP(1:29)+todo.(indice(j+1,:))(i)._respuestasEXP(2:30)==2));
 %  endfor
 %endfor
-%%_tracking=[];
-%%for i=[1 3 4]%1:_nSujetos
-%%  todo.(indice(2,:))(i)._groupStr
-%%  for j=expXsuj(i)-4:expXsuj(i)
-%%    num2str(todo.(indice(j+1,:))(i)._respuestasEXP(:)')
-%%  endfor
-%%endfor
+%
+%clear -x _tracking_T3 _tracking_T5
+%save('secuencias_Outcomes_exp_R2T3_R1T3T5');
+%%%%%%%%%%%%%% FIN obtencion de frecuencias de T S R P %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%_tracking=[];
+%for i=sujetos%1:_nSujetos
+%  todo.(indice(2,:))(i)._groupStr
+%  for j=expXsuj(i)-4:expXsuj(i)
+%    num2str(todo.(indice(j+1,:))(i)._respuestasEXP(:)')
+%  endfor
+%endfor
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%todo.exp17(1)._respuestasEXP(1:29)'+todo.exp17(1)._respuestasEXP(2:30)'
 %%diff(todo.exp17(1)._respuestasEXP(1:30))
 
 %%%%%%%%%%%%5  PARA graficar las frecuencias de las secuencias  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%sum(squeeze(sum(_tracking_T3(:,:,[1 3 4]),2)),2)
-%sum(squeeze(sum(_tracking_T4(:,:,[1 3 4]),2)),2)
-%sum(squeeze(sum(_tracking_T5(:,:,[1 3 4]),2)),2)
+%sum(squeeze(sum(_tracking_T3(:,:,sujetos),2)),2)
+%sum(squeeze(sum(_tracking_T4(:,:,sujetos),2)),2)
+%sum(squeeze(sum(_tracking_T5(:,:,sujetos),2)),2)
 clear all;close all;
-load('secuencias_T3');
-load('secuencias_T4_5');
-load('secuencias_T3_ideales');
-load('secuencias_T3');
-load('secuencias_T5_ideales');
-load('secuencias_T4_5');
-exp_T3=squeeze(sum(_tracking_T3(:,:,[1 3 4]),2));
-exp_T4=squeeze(sum(_tracking_T4(:,:,[1 3 4]),2));
-exp_T5=squeeze(sum(_tracking_T5(:,:,[1 3 4]),2));
-n=1;
-n=sum(exp_T3,1);
-%squeeze(_tracking_T3(:,:,[1 3 4])(1,:))
+%load('secuencias_T3');
+%load('secuencias_T4_5');
+%load('secuencias_T3_ideales');
+load('secuencias_Outcomes_exp_R2T3_R1T3T5');
 
-cd_T3=jackknife(@sem_dep,squeeze((_tracking_T3(:,:,[1 3 4])/n(1))(1,:)));
-dc_T3=jackknife(@sem_dep,squeeze((_tracking_T3(:,:,[1 3 4])/n(1))(2,:)));
-cc_T3=jackknife(@sem_dep,squeeze((_tracking_T3(:,:,[1 3 4])/n(1))(3,:)));
-dd_T3=jackknife(@sem_dep,squeeze((_tracking_T3(:,:,[1 3 4])/n(1))(4,:)));
-cd_T5=jackknife(@sem_dep,squeeze((_tracking_T5(:,:,[1 3 4])/n(1))(1,:)));
-dc_T5=jackknife(@sem_dep,squeeze((_tracking_T5(:,:,[1 3 4])/n(1))(2,:)));
-cc_T5=jackknife(@sem_dep,squeeze((_tracking_T5(:,:,[1 3 4])/n(1))(3,:)));
-dd_T5=jackknife(@sem_dep,squeeze((_tracking_T5(:,:,[1 3 4])/n(1))(4,:)));
-figure;hold on;
-plot(mean(exp_T3./n,2)','ok','linewidth',3,'MarkerSize',14,'MarkerFaceColor','k');
-plot(mean(exp_T5./n,2),'ob','linewidth',3,'MarkerSize',14,'MarkerFaceColor','b');
-H=errorbar(mean(exp_T3./n,2)',[mean(cd_T3) mean(dc_T3) mean(cc_T3) mean(dd_T3)],'.k')
+
+sujetos=[2 6];
+exp_T3=squeeze(sum(_tracking_T3(:,:,sujetos),2));
+%exp_T4=squeeze(sum(_tracking_T4(:,:,sujetos),2));
+exp_T5=squeeze(sum(_tracking_T5(:,:,sujetos),2));
+
+n=sum(exp_T3,1);
+cd_T3=jackknife(@sem_dep,squeeze((_tracking_T3(:,:,sujetos)/n(1))(1,:)));
+dc_T3=jackknife(@sem_dep,squeeze((_tracking_T3(:,:,sujetos)/n(1))(2,:)));
+cc_T3=jackknife(@sem_dep,squeeze((_tracking_T3(:,:,sujetos)/n(1))(3,:)));
+dd_T3=jackknife(@sem_dep,squeeze((_tracking_T3(:,:,sujetos)/n(1))(4,:)));
+cd_T5=jackknife(@sem_dep,squeeze((_tracking_T5(:,:,sujetos)/n(1))(1,:)));
+dc_T5=jackknife(@sem_dep,squeeze((_tracking_T5(:,:,sujetos)/n(1))(2,:)));
+cc_T5=jackknife(@sem_dep,squeeze((_tracking_T5(:,:,sujetos)/n(1))(3,:)));
+dd_T5=jackknife(@sem_dep,squeeze((_tracking_T5(:,:,sujetos)/n(1))(4,:)));
+h=figure;hold on;
+plot(mean(exp_T3([1 3 4 2],:)./n,2)','ok','linewidth',3,'MarkerSize',14,'MarkerFaceColor','k');
+plot(mean(exp_T5([1 3 4 2],:)./n,2),'ob','linewidth',3,'MarkerSize',14,'MarkerFaceColor','b');
+H=errorbar(mean(exp_T3([1 3 4 2],:)./n,2)',[mean(cd_T3) mean(cc_T3) mean(dd_T3) mean(dc_T3) ],'.k')
 set(H,'linewidth',3);
-H=errorbar(mean(exp_T5./n,2)',[mean(cd_T5) mean(dc_T5) mean(cc_T5) mean(dd_T5)],'.b')
+H=errorbar(mean(exp_T5([1 3 4 2],:)./n,2)',[mean(cd_T5) mean(cc_T5) mean(dd_T5) mean(dc_T5) ],'.b')
 set(H,'linewidth',3);
+axis([0 5 0.0 0.65]);
+%axis([0 5 0.0 0.9]);
+%print "figuras/figuras para Sergio/frecuecnia_RTPS_error.pdf"
 %wilcoxon_test
-%(_tracking_T3(:,:,[1 3 4])/n(1))(1,:)
-%(_tracking_T5(:,:,[1 3 4])/n(1))(1,:)))
+%(_tracking_T3(:,:,sujetos)/n(1))(1,:)
+%(_tracking_T5(:,:,sujetos)/n(1))(1,:)))
 figure;hold on;
 n=sum(exp_T3,1);
 h=bar([mean(exp_T3./n,2), mean(exp_T5./n,2)])
@@ -573,7 +584,7 @@ h=errorbar(mean(exp_T3(3,:)),mean(exp_T3(1,:)),sem(exp_T3(3,:)),sem(exp_T3(1,:))
 set(h,'linewidth',3);
 h=errorbar(mean(exp_T5(3,:)),mean(exp_T5(1,:)),sem(exp_T5(3,:)),sem(exp_T5(1,:)),'~>k')
 set(h,'linewidth',3);
-h=plot(_idealSujeto_T3(3,1),_idealSujeto_T3(2,1),'*om','linewidth',3,'MarkerSize',15,'MarkerEdgeColor','k','MarkerFaceColor','k')
+%h=plot(_idealSujeto_T3(3,1),_idealSujeto_T3(2,1),'*om','linewidth',3,'MarkerSize',15,'MarkerEdgeColor','k','MarkerFaceColor','k')
 h=plot(mean(exp_T5(3,:)),mean(exp_T5(1,:)),'*ok','linewidth',3,'MarkerSize',15,'MarkerEdgeColor','k','MarkerFaceColor','k')
 
 
@@ -607,8 +618,20 @@ I_T3= (rw_T3(fin_T3-4:fin_T3)-to_T3(fin_T3-4:fin_T3))/(rw_T3(fin_T3-4:fin_T3)+to
 I_T5= (rw_T5(fin_T5-4:fin_T5)-to_T5(fin_T5-4:fin_T5))/(rw_T5(fin_T5-4:fin_T5)+to_T5(fin_T5-4:fin_T5));
 
 
-
-aux_T3=reshape(_tracking_T3(4,:,[1 3 4]),1,15)
-aux_T5=reshape(_tracking_T5(4,:,[1 3 4]),1,15)
+% Test sobre P
+aux_T3=reshape(_tracking_T3(4,:,sujetos),1,15)
+aux_T5=reshape(_tracking_T5(4,:,sujetos),1,15)
 t_test_2(aux_T3,aux_T5);
-ranksum
+% Test sobre R
+aux_T3=reshape(_tracking_T3(3,:,sujetos),1,15)
+aux_T5=reshape(_tracking_T5(3,:,sujetos),1,15)
+t_test_2(aux_T3,aux_T5);
+% Test sobre T
+aux_T3=reshape(_tracking_T3(1,:,sujetos),1,15)
+aux_T5=reshape(_tracking_T5(1,:,sujetos),1,15)
+t_test_2(aux_T3,aux_T5);
+% Test sobre S
+aux_T3=reshape(_tracking_T3(2,:,sujetos),1,15)
+aux_T5=reshape(_tracking_T5(2,:,sujetos),1,15)
+t_test_2(aux_T3,aux_T5);
+%ranksum

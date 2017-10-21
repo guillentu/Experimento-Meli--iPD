@@ -31,3 +31,4 @@ segundos15=[42.933
    41.933]
 
 ranksum(primeros15,segundos15)
+ttest(primeros15,segundos15)  % OK da significativo
