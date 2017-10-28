@@ -1,20 +1,20 @@
 h=figure;
 %for i=_vSujetos
-for i=[1]
+for i=[1 2 3 4 5 6]
   subplot(2,3,i);hold on;
   
-  %%%%%%%%%%%% PARA PROMEDIOS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  Q2v=round(mean(Q2(:,:,[2 6]),3).*10000)/100;% promedio de los sujetos 2 y 6
-  scatter([2],[2],mean(R_mean([2 6]))*500,'o','linewidth',2)
-  scatter([4],[4],mean(T_mean([2 6]))*500,'o','linewidth',2)
-  scatter([6],[2],mean(P_mean([2 6]))*500,'o','linewidth',2)
-  scatter([4],[0],mean(S_mean([2 6]))*500,'o','linewidth',2)
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-%  Q2v=round(Q2.*10000)/100;
-%  scatter([2],[2],R_mean(i)*500,'o','linewidth',2)
-%  scatter([4],[4],T_mean(i)*500,'o','linewidth',2)
-%  scatter([6],[2],P_mean(i)*500,'o','linewidth',2)
-%  scatter([4],[0],S_mean(i)*500,'o','linewidth',2)
+%  %%%%%%%%%%%% PARA PROMEDIOS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Q2v=round(mean(Q2(:,:,[2 6]),3).*10000)/100;% promedio de los sujetos 2 y 6
+%  scatter([2],[2],mean(R_mean([2 6]))*500,'o','linewidth',2)
+%  scatter([4],[4],mean(T_mean([2 6]))*500,'o','linewidth',2)
+%  scatter([6],[2],mean(P_mean([2 6]))*500,'o','linewidth',2)
+%  scatter([4],[0],mean(S_mean([2 6]))*500,'o','linewidth',2)
+%  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+  Q2v=round(Q2.*10000)/100;
+  scatter([2],[2],R_mean(i)*500,'o','linewidth',2)
+  scatter([4],[4],T_mean(i)*500,'o','linewidth',2)
+  scatter([6],[2],P_mean(i)*500,'o','linewidth',2)
+  scatter([4],[0],S_mean(i)*500,'o','linewidth',2)
   text(-0.25+[2 4 6 4],[2 4 2 0],{'R';'T';'P';'S'},'fontsize',10)
   title(strcat('sujeto: ', _txtSujetos(i,:)))
   h=drawArrow([2*1.25,2*1.25,.85*4,.85*4],1.25,0.3,0.3);
