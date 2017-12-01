@@ -36,17 +36,66 @@
 clear all;
 load datos_exp_R1T3.mat
 sujetos=[1 3 4];fin=18;
+T_T3=T2(sujetos,fin-4:fin);
+R_T3=R2(sujetos,fin-4:fin);
+P_T3=P2(sujetos,fin-4:fin);
+S_T3=S2(sujetos,fin-4:fin);
+
 sujetos=[2 5 6];fin=27;
-T=T2(sujetos,fin-4:fin);
-R=R2(sujetos,fin-4:fin);
-P=P2(sujetos,fin-4:fin);
-S=S2(sujetos,fin-4:fin);
+Tt_T3=T2(sujetos,fin-4:fin);
+Rr_T3=R2(sujetos,fin-4:fin);
+Pp_T3=P2(sujetos,fin-4:fin);
+Ss_T3=S2(sujetos,fin-4:fin);
+save('outcomesT3.mat','T_T3','R_T3','P_T3','S_T3','Tt_T3','Rr_T3','Pp_T3','Ss_T3')
+
+clear all;
+load datos_exp_R1T5_y_R2T3.mat
+sujetos=[1 3 4];fin=17;
+T_T5=T2(sujetos,fin-4:fin);
+R_T5=R2(sujetos,fin-4:fin);
+P_T5=P2(sujetos,fin-4:fin);
+S_T5=S2(sujetos,fin-4:fin);
+
+sujetos=[2 5 6];fin=14;
+Tt_R2T3=T2(sujetos,fin-4:fin);
+Rr_R2T3=R2(sujetos,fin-4:fin);
+Pp_R2T3=P2(sujetos,fin-4:fin);
+Ss_R2T3=S2(sujetos,fin-4:fin);
+save('outcomesT5.mat','T_T5','R_T5','P_T5','S_T5','Tt_R2T3','Rr_R2T3','Pp_R2T3','Ss_R2T3')
+
+clear all;
+load outcomesT3.mat
+load outcomesT5.mat
+
+ranksum(mean(T_T3),mean(T_T5))
+ranksum(T_T3(:),T_T5(:))
+ranksum(mean(R_T3),mean(R_T5))
+ranksum(R_T3(:),R_T5(:))
+ranksum(mean(P_T3),mean(P_T5))
+ranksum(P_T3(:),P_T5(:))
+ranksum(mean(S_T3),mean(S_T5))
+ranksum(S_T3(:),S_T5(:))
+
+ranksum(mean(Tt_T3),mean(Tt_R2T3([1 3],:)))
+ranksum(Tt_T3(:),Tt_R2T3(:))
+ranksum(mean(Rr_T3),mean(Rr_R2T3([1 3],:)))
+ranksum(Rr_T3(:),Rr_R2T3(:))
+ranksum(mean(Pp_T3),mean(Pp_R2T3([1 3],:)))
+ranksum(Pp_T3(:),Pp_R2T3(:))
+ranksum(mean(Ss_T3),mean(Ss_R2T3([1 3],:)))
+ranksum(Ss_T3(:),Ss_R2T3(:))
 
 mat=([T(:) R(:) P(:) S(:)])
 [p,table,stats]=friedman(mat)
 H=multcompare(stats)
 aux=H(:,3).*H(:,5)
 diff = [H(:,1:2)  aux>0]
+
+[P,ANOVATAB,STATS] = anova2([mean(T_T3)' mean(R_T3)' mean(P_T3)' mean(S_T3)'])
+[COMPARISON,MEANS,H,GNAMES] = multcompare(STATS,'CType','bonferroni')
+
+[P,ANOVATAB,STATS] = anova2([mean(Tt_T3)' mean(Rr_T3)' mean(Pp_T3)' mean(Ss_T3)'])
+[COMPARISON,MEANS,H,GNAMES] = multcompare(STATS,'CType','bonferroni')
 
 clear all;
 load datos_exp_R1T5_y_R2T3.mat

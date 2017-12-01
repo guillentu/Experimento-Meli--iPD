@@ -67,9 +67,9 @@ clear all;
 load outcomesT3.mat
 load outcomesT5.mat
 
-ranksum(mean(T_T3),mean(T_T5))
+ranksum(mean(T_T3)',mean(T_T5)')
 ranksum(T_T3(:),T_T5(:))
-ranksum(mean(R_T3),mean(R_T5))
+ranksum(mean(R_T3)',mean(R_T5)')
 ranksum(R_T3(:),R_T5(:))
 ranksum(mean(P_T3),mean(P_T5))
 ranksum(P_T3(:),P_T5(:))
@@ -90,6 +90,12 @@ mat=([T(:) R(:) P(:) S(:)])
 H=multcompare(stats)
 aux=H(:,3).*H(:,5)
 diff = [H(:,1:2)  aux>0]
+
+[P,ANOVATAB,STATS] = anova2([mean(T_T3)' mean(R_T3)' mean(P_T3)' mean(S_T3)'])
+[COMPARISON,MEANS,H,GNAMES] = multcompare(STATS,'CType','bonferroni')
+
+[P,ANOVATAB,STATS] = anova2([mean(Tt_T3)' mean(Rr_T3)' mean(Pp_T3)' mean(Ss_T3)'])
+[COMPARISON,MEANS,H,GNAMES] = multcompare(STATS,'CType','bonferroni')
 
 clear all;
 load datos_exp_R1T5_y_R2T3.mat
