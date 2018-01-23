@@ -210,7 +210,7 @@ function x = extraerDatos_iPD_abril_corregido_meli(str)
     if cargar==1
 			if strcmp(_groupStr,"2A")
 				_sujeto=1;
-			if strcmp(_groupStr,"1B")
+			elseif strcmp(_groupStr,"1B")
 				_sujeto=2;
 			elseif strcmp(_groupStr,"2B")
 				_sujeto=3;

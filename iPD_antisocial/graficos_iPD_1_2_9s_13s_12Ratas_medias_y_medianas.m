@@ -3,9 +3,9 @@
 
 
 %_txtSujetos=["1A";"2A";"3A";"4A";"5A";"6A";"7A";"8A";"9A";"10A";"3B";"4B"];
-_txtSujetos=["1S";"2S";"1M";"2M";"1T";"2T"];
+_txtSujetos=["2A";"1B";"2B";"1C";"2C";"1D";"2D"];
 % PORCENTAJE DE COOPERACION
-_nSujetos=6;
+_nSujetos=7;
 
 _coop=zeros(1,_nSujetos);
 _cooperacion=[];
@@ -73,7 +73,7 @@ for i=1:_nSujetos
   _stdXsujeto(i)=sem(_promediosC(primero:ultimo,i));
 endfor 
 figure; 
-txt_1="Sujetos 1S-2S-1M-2M-1T-2T";
+txt_1="Sujetos: 2A 1B 2B 1C 2C 1D 2D";
 h=errorbar([1:_nSujetos],_mediaXsujeto, _stdXsujeto,'*c');
 set (h, "linewidth", 3);
 hh=xlabel(txt_1);set(hh, "fontsize", 14);
@@ -113,3 +113,15 @@ set (h2, "linewidth", 3);
 plot([1:_nSujetos],.5*ones(1,_nSujetos),'--k');
 hold off
 
+figure;
+h=plot(_promediosC([1:15],[1 3 4 5 6]))
+
+%figure;
+%h=plot(_promediosC(:,[1 3 4 5 6]))
+
+%figure;
+%h=plot(_promediosC(:,[1 2 3 4 5 6 7]))
+
+figure;
+hh=errorbar(mean(_promediosC([1:12],[1 3 4 5 6]),2),sem(_promediosC([1:12],[1 3 4 5 6]),2));
+h=plot(mean(_promediosC([1:12],[1 3 4 5 6]),2))
